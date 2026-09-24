@@ -35,13 +35,15 @@ top-personal:
     sub-relationships:
       [leaf-marriage, leaf-parenting, leaf-friendship, leaf-community, leaf-dating]
     sub-lifestyle:
-      [leaf-style, leaf-food-drink]
+      [leaf-style, leaf-food-drink, leaf-travel]
 
 top-professional:
   description: "職涯與工作：商業、財務、領導、溝通"
   subs:
     sub-business:
-      [leaf-strategy, leaf-marketing, leaf-startup, leaf-management, leaf-sales, leaf-operations]
+      # customer-experience 於 2026-09-24 新增：服務設計／款待／體驗經濟（Disney、Guidara、Danny Meyer、Pine & Gilmore）。
+      [leaf-strategy, leaf-marketing, leaf-startup, leaf-management, leaf-sales, leaf-operations,
+       leaf-customer-experience]
     # leaf-investing was 134 books. Trading (charts, systems, trader
     # psychology) and value investing (Graham/Buffett/Lynch) are distinct
     # enough disciplines to browse separately; the rest — index/passive,
@@ -77,7 +79,8 @@ top-craft:
     sub-design:
       [leaf-ux, leaf-visual, leaf-typography, leaf-product-design, leaf-architecture]
     sub-writing:
-      [leaf-fiction, leaf-non-fiction, leaf-screenwriting, leaf-poetry]
+      # media-production 於 2026-09-24 新增：影音／廣播／podcast 的製作手藝（剪輯、錄音、敘事節目）。
+      [leaf-fiction, leaf-non-fiction, leaf-screenwriting, leaf-poetry, leaf-media-production]
 
 top-wisdom:
   description: "跨域大局觀：哲學、歷史、科學、學習"
