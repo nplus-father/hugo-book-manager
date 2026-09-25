@@ -148,6 +148,17 @@ def check(repo):
         "%d 個句子（需 ≥%d）" % (n_sent, MIN_LIMIT_SENTENCES),
     ))
 
+    s = io.open(os.path.join(repo, "site", "content", "_index.md"), encoding="utf-8").read()
+    if "{{% book-overview %}}" in s:
+        closed = "{{% /book-overview %}}" in s
+        checks.append(("區塊有關閉", closed, "有" if closed else "缺 {{% /book-overview %}}，Hugo build 會失敗"))
+
+    m = re.search(r'^\s*blurb:\s*"(.*)"\s*$', s, re.M)
+    if m:
+        blurb = m.group(1)
+        zh = re.search(r"[一-鿿]", blurb) and "這裡填寫書籍的簡介" not in blurb
+        checks.append(("站內簡介是中文", bool(zh), "是" if zh else "佔位符或英文：" + blurb[:30]))
+
     meta = dict(
         legacy=legacy,
         total=zh_len(txt),
