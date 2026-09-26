@@ -27,18 +27,23 @@ SECTION_CHARS = {
     "這本書的限制": (300, 900),
 }
 
+QTY_UNITS = "字人萬億千百元美歐英日台頁本名次篇件條項種個位座間所家公里呎磅噸%％"
+
 YEAR_RE = re.compile(
     r"公元前\s*\d+"
-    r"|(?:19|20)\d{2}"
-    r"|\d{3,4}\s*年"
+    r"|(?<![\d.,])(?:19|20)\d{2}(?![\d.,]|\s*[" + QTY_UNITS + r"])"
+    r"|(?<![\d.,])\d{3,4}\s*年"
     r"|\d{1,2}\s*世紀"
 )
 
 REF_RE = re.compile(
-    r"（[A-Z][A-Za-z .\-']{3,}）"
-    r"|_[A-Za-z][^_\n]{4,}_"
-    r"|《[^》]{2,}》"
+    r"（\*{0,2}[A-ZÀ-Þ][^（）\n一-鿿*]{3,}\*{0,2}）"
+    r"|(?<!\w)_[A-Za-z][^_\n]{4,}_"
+    r"|《[^》]{2,}》",
+    re.M,
 )
+
+BLURB_NOISE = ["{{", "[!", "<br", "]("]
 
 CODE_SPAN_RE = re.compile(r"`[^`\n]+`")
 
@@ -67,6 +72,35 @@ def dead_bold(txt):
         if inner and _is_punct(inner[-1]) and not nxt.isspace() and not _is_punct(nxt):
             out.append(m.group(0))
     return out
+
+
+_PAIRED_RE = re.compile(r"\{\{<\s*book-cover\b[^>]*?(?<!/)>\}\}(.*?)\{\{<\s*/book-cover\s*>\}\}", re.S)
+
+
+def front_matter(s):
+    if not s.startswith("---"):
+        return {}
+    end = s.find("\n---", 3)
+    if end < 0:
+        return {}
+    try:
+        import yaml
+        fm = yaml.safe_load(s[3:end])
+    except Exception:
+        return {}
+    return fm if isinstance(fm, dict) else {}
+
+
+def read_blurb(s):
+    m = _PAIRED_RE.search(s)
+    if m:
+        return "paired", m.group(1).strip()
+    if "book-cover" not in s:
+        return None, ""
+    book = front_matter(s).get("book")
+    if isinstance(book, dict) and book.get("blurb") is not None:
+        return "field", str(book["blurb"]).strip()
+    return "missing", ""
 
 
 def read_overview(repo):
@@ -153,11 +187,16 @@ def check(repo):
         closed = "{{% /book-overview %}}" in s
         checks.append(("區塊有關閉", closed, "有" if closed else "缺 {{% /book-overview %}}，Hugo build 會失敗"))
 
-    m = re.search(r'^\s*blurb:\s*"(.*)"\s*$', s, re.M)
-    if m:
-        blurb = m.group(1)
+    kind, blurb = read_blurb(s)
+    if kind == "missing":
+        checks.append(("站內簡介是中文", False, "frontmatter 缺 book.blurb 欄位"))
+    elif kind is not None:
         zh = re.search(r"[一-鿿]", blurb) and "這裡填寫書籍的簡介" not in blurb
         checks.append(("站內簡介是中文", bool(zh), "是" if zh else "佔位符或英文：" + blurb[:30]))
+        if kind == "field":
+            noise = [n for n in BLURB_NOISE if n in blurb]
+            checks.append(("站內簡介無雜訊", not noise,
+                           "無" if not noise else "含 " + " ".join(noise)))
 
     meta = dict(
         legacy=legacy,
