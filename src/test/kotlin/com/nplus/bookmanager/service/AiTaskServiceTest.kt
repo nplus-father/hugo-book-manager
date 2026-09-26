@@ -136,6 +136,29 @@ class AiTaskServiceTest {
     }
 
     @Test
+    fun `readBatchMetadataResponse carries the blurb and tolerates responses written before it existed`() {
+        outputDir.mkdirs()
+        File(outputDir, "batch-metadata-response.json").writeText(
+            """
+            {"results": [
+              {"bookId": "with-blurb", "structure": {"sections": []}, "metadata": {
+                "repoName": "a", "englishTitle": "A", "chineseTitle": "甲", "description": "A | X | y",
+                "topics": [], "topCategory": "t", "subCategory": "s", "leafCategory": "l",
+                "blurb": "一句繁體中文簡介"}},
+              {"bookId": "legacy", "structure": {"sections": []}, "metadata": {
+                "repoName": "b", "englishTitle": "B", "chineseTitle": "乙", "description": "B | X | y",
+                "topics": [], "topCategory": "t", "subCategory": "s", "leafCategory": "l"}}
+            ]}
+            """.trimIndent(),
+        )
+
+        val result = service.readBatchMetadataResponse()
+        assertNotNull(result)
+        assertEquals("一句繁體中文簡介", result["with-blurb"]!!.first.blurb)
+        assertEquals("", result["legacy"]!!.first.blurb)
+    }
+
+    @Test
     fun `getBatchResultForBook returns correct result`() {
         outputDir.mkdirs()
         val response =

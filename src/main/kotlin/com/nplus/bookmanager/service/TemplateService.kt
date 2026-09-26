@@ -81,14 +81,23 @@ class TemplateService : TemplateWriter {
                     "link: \"${escapeQuoted(bookInput.purchaseUrl)}\"",
                 ).replace(
                     "blurb: \"${AppConfig.TEMPLATE_BLURB_PLACEHOLDER}\"",
-                    "blurb: \"${escapeQuoted(blurbOf(metadata.description))}\"",
+                    "blurb: \"${escapeQuoted(blurbOf(metadata))}\"",
                 )
 
         indexFile.writeText(content)
         println("  Updated: _index.md")
     }
 
-    private fun blurbOf(description: String): String {
+    private fun blurbOf(metadata: GeneratedMetadata): String {
+        metadata.blurb
+            .trim()
+            .takeIf { it.isNotEmpty() }
+            ?.let { return it }
+        println("  Warning: metadata has no Chinese blurb, falling back to the description Brief")
+        return briefOf(metadata.description)
+    }
+
+    private fun briefOf(description: String): String {
         val parts = description.split('|', '｜').map { it.trim() }.filter { it.isNotEmpty() }
         return if (parts.size >= 3) parts.drop(2).joinToString(" ") else description.trim()
     }

@@ -62,7 +62,8 @@ of N books means N rounds of request → response → rerun.
         ],
         "topCategory": "personal",
         "subCategory": "mindset",
-        "leafCategory": "growth"
+        "leafCategory": "growth",
+        "blurb": "以微小習慣的複利效應為核心，示範如何透過身分認同與環境設計，讓好習慣自然養成、壞習慣難以為繼。"
       },
       "structure": {
         "sections": [
@@ -139,8 +140,14 @@ When user says **"請處理 AI 任務"** and `batch-metadata-request.json` is pr
   titles, so an English title set here stays English for good.
 - The description's Brief is written in English by convention, but it is not
   the duplicate key: `refreshRepoIndex` dedups by the ASIN in the link, falling
-  back to title + author. `initBooks` copies the Brief into the site `blurb`,
-  which `/book-generate-deep-overview` step 3 then rewrites in Chinese.
+  back to title + author.
+- `blurb` is the site introduction: `initBooks` writes it into `book.blurb` of
+  `site/content/_index.md`. Traditional Chinese, 1–2 sentences, 30–75 characters,
+  plain text (no `**`, `{{`, `[!`, `<br`, `](`), condensed from the book rather than
+  translated from the Brief; never invent a Chinese title (prompt rule 7). If it is
+  missing or blank, `initBooks` falls back to the English Brief and prints a
+  warning — `audit-overview.py` then fails the site until
+  `/book-generate-deep-overview` step 3 rewrites it.
 - **Strip a leading "The "/"A "/"An " article** from the English title before
   slugifying. Example: `The Lean Startup` → `lean-startup`. The CLI also
   strips a leading `the-` defensively when parsing the response (see
@@ -155,6 +162,7 @@ When user says **"請處理 AI 任務"** and `batch-metadata-request.json` is pr
 - ❌ Emitting only 5 topics (missing `leaf-Z`) — schema is now 6 entries.
 - ❌ Using legacy `category: "growth-book-summary"` — replaced by three `*Category` fields.
 - ❌ Inventing a new `sub-` or `top-` value not in the taxonomy.
+- ❌ Omitting `blurb`, or filling it with the English Brief / a 200-character translation of it.
 - ❌ Wrong topic order — must be `[hugobook, nplus-portal, nplus-kind-book, leaf, sub, top]`.
 
 ## Error Recovery

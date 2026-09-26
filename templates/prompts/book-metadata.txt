@@ -13,7 +13,8 @@ Please provide the following information in JSON format:
   "topics": ["hugobook", "nplus-portal", "nplus-kind-book", "leaf-<Z>", "sub-<Y>", "top-<X>"],
   "topCategory": "<X>",
   "subCategory": "<Y>",
-  "leafCategory": "<Z>"
+  "leafCategory": "<Z>",
+  "blurb": "一到兩句繁體中文簡介，30–75 字"
 }
 
 Rules:
@@ -40,6 +41,8 @@ Rules:
    - Brief: ONE descriptive sentence (≤ ~200 chars) summarizing the book's core argument or what
      the reader will get from it. Default to English; use Traditional Chinese ONLY when both
      title and author are Chinese. No placeholder text, no marketing fluff, no trailing ellipsis.
+   - The Brief stays English even though the site needs Chinese — the site blurb comes from
+     the separate `blurb` field (rule 7), not from here.
    - Example (English book): "The Four | Scott Galloway | Decodes how Amazon, Apple, Facebook, and Google each hijacked a primal human instinct to amass unprecedented power."
    - Example (Chinese book): "薄薄的故鄉 | 王安憶 | 透過上海的弄堂、街角與家族記憶，重構一座城市與一個世代的精神原鄉。"
 4. topics: MUST be exactly 6 entries in this order:
@@ -65,5 +68,16 @@ Rules:
    once the overview is written; the initial clone is flat in new-books.
    Example: top-personal / sub-mindset / leaf-stoicism → "personal", "mindset", "stoicism"
             → archived as `books-done/personal/mindset/stoicism/meditations/`
+
+7. blurb: the site's one-line introduction, written into `book.blurb` of `site/content/_index.md`
+   and published verbatim into the portal's index.json. It is NOT a translation of the Brief.
+   - Traditional Chinese (繁體中文), for English books too. 1–2 sentences, 30–75 characters
+     (whitespace not counted) — the English Brief is ~200 chars, so condense, don't translate.
+   - State the book's core theme and what the reader gets; objective and tight. No marketing
+     fluff ("必讀", "暢銷"), no trailing ellipsis.
+   - Plain text only: no markdown (`**`, `_`), no `{{`, `[!`, `<br`, no links `](`.
+   - When naming the book or author inside the blurb, use `chineseTitle` as decided in rule 2.
+     Never invent a Chinese title for a book without a Traditional Chinese edition.
+   - Example: "以微小習慣的複利效應為核心，示範如何透過身分認同與環境設計，讓好習慣自然養成、壞習慣難以為繼。"
 
 Only return valid JSON, no markdown code blocks, no explanations.

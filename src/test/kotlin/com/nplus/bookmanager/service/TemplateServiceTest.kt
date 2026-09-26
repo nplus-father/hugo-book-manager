@@ -86,7 +86,30 @@ class TemplateServiceTest {
     }
 
     @Test
-    fun `the blurb is lifted out of the packed description into frontmatter`() {
+    fun `the Chinese blurb from the metadata wins over the description Brief`() {
+        val repo = File(root, "atomic-habits").apply { mkdirs() }
+        seedTemplate(repo)
+        val blurb = "以微小習慣的複利效應為核心，示範如何透過身分認同與環境設計，讓好習慣自然養成、壞習慣難以為繼。"
+
+        service.updateTemplateFiles(repo, metadata().copy(blurb = "  $blurb  "), bookInput())
+
+        val index = File(repo, TemplateService.INDEX_MD_PATH).readText()
+        assertTrue(index.contains("blurb: \"$blurb\""))
+        assertFalse(index.contains("Tiny changes"))
+    }
+
+    @Test
+    fun `a blank blurb falls back to the description Brief`() {
+        val repo = File(root, "atomic-habits").apply { mkdirs() }
+        seedTemplate(repo)
+
+        service.updateTemplateFiles(repo, metadata().copy(blurb = "   "), bookInput())
+
+        assertTrue(File(repo, TemplateService.INDEX_MD_PATH).readText().contains("blurb: \"Tiny changes, remarkable results.\""))
+    }
+
+    @Test
+    fun `without a blurb the Brief is lifted out of the packed description into frontmatter`() {
         val repo = File(root, "atomic-habits").apply { mkdirs() }
         seedTemplate(repo)
 
@@ -98,7 +121,7 @@ class TemplateServiceTest {
     }
 
     @Test
-    fun `a description without the packed form still reaches the blurb`() {
+    fun `without a blurb a description lacking the packed form still reaches the blurb`() {
         val repo = File(root, "atomic-habits").apply { mkdirs() }
         seedTemplate(repo)
 

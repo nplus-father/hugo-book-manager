@@ -237,6 +237,7 @@ class InitBooksCommand(
         println("\n  Generated metadata:")
         println("    Repo Name: ${metadata.repoName}")
         println("    Description: ${metadata.description}")
+        println("    Blurb:  ${metadata.blurb.ifBlank { "(missing, falls back to the description Brief)" }}")
         println("    Top:    ${metadata.topCategory}")
         println("    Sub:    ${metadata.subCategory}")
         println("    Leaf:   ${metadata.leafCategory}")

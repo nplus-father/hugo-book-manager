@@ -85,6 +85,7 @@ data class GeneratedMetadata(
     val topCategory: String,
     val subCategory: String,
     val leafCategory: String,
+    val blurb: String = "",
 )
 
 @Serializable
