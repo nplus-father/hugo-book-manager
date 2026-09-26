@@ -85,7 +85,9 @@ The `topics` array MUST have exactly 6 entries in this order:
 `[hugobook, nplus-portal, nplus-kind-book, leaf-<Z>, sub-<Y>, top-<X>]`
 
 The three `*Category` fields are the same values as topics #4/#5/#6 but **without** the prefix.
-The CLI uses them to compute the local clone path: `<top>/<sub>/<leaf>/<repoName>`.
+They set the GitHub topics and, later, where the repo is archived under
+`books-done/<top>/<sub>/<leaf>/`. They do NOT affect the clone path: `init-books`
+clones flat into `<DEFAULT_WORK_DIR>/<repoName>` (new-books is deliberately flat).
 
 ## Task Type 2: Migrate Leaf Taxonomy
 
@@ -110,7 +112,7 @@ When user says **"請處理 AI 任務"** and `batch-metadata-request.json` is pr
 
    This will:
    - Create the GitHub repo from the template
-   - Clone to `<DEFAULT_WORK_DIR>/<top>/<sub>/<leaf>/<repoName>/`
+   - Clone to `<DEFAULT_WORK_DIR>/<repoName>/` (flat)
    - Update template files
    - Download cover image
    - Create docs structure
@@ -131,6 +133,14 @@ When user says **"請處理 AI 任務"** and `batch-metadata-request.json` is pr
   never invent a translation. The description's first segment stays the
   English original title regardless (Chinese only for Chinese-native books).
 - For `repoName` and `folderName`, use lowercase kebab-case.
+- Every `title` in `structure` (sections and chapters) is Traditional Chinese,
+  **including English books** — only `folderName` stays English kebab-case.
+  Later steps (`/book-translate-content`, `/book-rewrite-content`) do not revisit
+  titles, so an English title set here stays English for good.
+- The description's Brief is written in English by convention, but it is not
+  the duplicate key: `refreshRepoIndex` dedups by the ASIN in the link, falling
+  back to title + author. `initBooks` copies the Brief into the site `blurb`,
+  which `/book-generate-deep-overview` step 3 then rewrites in Chinese.
 - **Strip a leading "The "/"A "/"An " article** from the English title before
   slugifying. Example: `The Lean Startup` → `lean-startup`. The CLI also
   strips a leading `the-` defensively when parsing the response (see

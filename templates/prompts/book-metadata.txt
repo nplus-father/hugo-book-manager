@@ -61,8 +61,9 @@ Rules:
                   If no good fit, propose a new kebab-case `leaf-<Z>` and (silently) add it via the
                   taxonomy file later. Do not invent new top or sub values.
 6. topCategory / subCategory / leafCategory: same value as topics #6/#5/#4 respectively but **without** the prefix.
-   These three fields drive the local folder layout `<topCategory>/<subCategory>/<leafCategory>/<repoName>`.
+   These three fields decide the archive folder `books-done/<topCategory>/<subCategory>/<leafCategory>/<repoName>`
+   once the overview is written; the initial clone is flat in new-books.
    Example: top-personal / sub-mindset / leaf-stoicism → "personal", "mindset", "stoicism"
-            → folder `personal/mindset/stoicism/meditations/`
+            → archived as `books-done/personal/mindset/stoicism/meditations/`
 
 Only return valid JSON, no markdown code blocks, no explanations.
