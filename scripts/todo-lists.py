@@ -106,15 +106,32 @@ def cmd_italic(root):
     sys.stderr.write("%d 本概覽有緊貼漢字、不會渲染的 _斜體_\n" % n)
 
 
+LOCALE_RE = re.compile(r"^locale\s*=\s*['\"]([^'\"]*)['\"]", re.M)
+
+
+def cmd_locale(root):
+    n = 0
+    for b in audit.find_books(root):
+        p = os.path.join(b, "site", "hugo.toml")
+        if not os.path.exists(p):
+            continue
+        m = LOCALE_RE.search(io.open(p, encoding="utf-8").read())
+        if m and m.group(1) != "zh-Hant-TW":
+            n += 1
+            print("%s\t%s" % (rel(b, root), m.group(1)))
+    sys.stderr.write("%d 本 site/hugo.toml 的 locale 不是 zh-Hant-TW\n" % n)
+
+
 def main():
     ap = argparse.ArgumentParser(description="書庫資料待辦名單（純檔案掃描，每次重算，不存狀態）")
-    ap.add_argument("list", choices=["blurb", "chapter-titles", "mermaid-shortcode", "italic-adjacent"],
+    ap.add_argument("list", choices=["blurb", "chapter-titles", "mermaid-shortcode", "italic-adjacent", "locale"],
                     help="blurb：長度不在 30–75、非中文、含標記或缺欄位；chapter-titles：docs/ 章節 title 不是中文；"
-                         "mermaid-shortcode：仍用 {{< mermaid >}}；italic-adjacent：概覽 _Title_ 緊貼漢字")
+                         "mermaid-shortcode：仍用 {{< mermaid >}}；italic-adjacent：概覽 _Title_ 緊貼漢字；"
+                         "locale：hugo.toml locale 不是 zh-Hant-TW")
     ap.add_argument("--root", default=audit.DEFAULT_ROOT)
     a = ap.parse_args()
     {"blurb": cmd_blurb, "chapter-titles": cmd_chapter_titles,
-     "mermaid-shortcode": cmd_mermaid, "italic-adjacent": cmd_italic}[a.list](a.root)
+     "mermaid-shortcode": cmd_mermaid, "italic-adjacent": cmd_italic, "locale": cmd_locale}[a.list](a.root)
     return 0
 
 
