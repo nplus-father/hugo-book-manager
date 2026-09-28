@@ -42,8 +42,9 @@ top-professional:
   subs:
     sub-business:
       # customer-experience 於 2026-09-24 新增：服務設計／款待／體驗經濟（Disney、Guidara、Danny Meyer、Pine & Gilmore）。
+      # human-resources 於 2026-09-26 新增：HR 職能、薪酬、人資教科書、勞動法規（Ulrich、Dessler、勞基法）。
       [leaf-strategy, leaf-marketing, leaf-startup, leaf-management, leaf-sales, leaf-operations,
-       leaf-customer-experience]
+       leaf-customer-experience, leaf-human-resources]
     # leaf-investing was 134 books. Trading (charts, systems, trader
     # psychology) and value investing (Graham/Buffett/Lynch) are distinct
     # enough disciplines to browse separately; the rest — index/passive,
