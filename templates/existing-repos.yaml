@@ -1,6 +1,6 @@
 # Cached snapshot of book repos on the configured owner.
 # Refresh with: ./gradlew refreshRepoIndex
-last_updated: "2026-09-26T12:02:55.035374242+08:00"
+last_updated: "2026-09-26T16:58:24.578741693+08:00"
 repos:
   - name: 10-percent-entrepreneur
     description: The 10% Entrepreneur | Patrick J. McGinnis | A practical playbook for launching a side venture without quitting the day job, devoting just 10% of your time and resources to entrepreneurship.
@@ -1662,6 +1662,10 @@ repos:
     description: 說話的品格 | 李起周 | 韓國作家以東方哲思探討說話的修養，主張言語即人品，聆聽、沉默與真誠是溝通的根本。
     url: https://github.com/nplus-father/dignity-of-speaking
     topics: [hugobook, leaf-persuasion, nplus-kind-book, nplus-portal, sub-communication, top-professional]
+  - name: directing-documentary
+    description: Directing the Documentary | Michael Rabiger | A project-based course that takes a documentary maker from history and authorship through research, shooting, interviewing and editing, treating the camera as a tool of inquiry and personal expression.
+    url: https://github.com/nplus-father/directing-documentary
+    topics: [hugobook, leaf-media-production, nplus-kind-book, nplus-portal, sub-writing, top-craft]
   - name: discipline-is-destiny
     description: Discipline Is Destiny | Ryan Holiday | The Stoic virtue of temperance in short essays, working outward from the body through the temperament to the soul — self-command as the precondition of every other strength.
     url: https://github.com/nplus-father/discipline-is-destiny
@@ -2962,6 +2966,10 @@ repos:
     description: "How to Be a Man | Glenn O'Brien | A wry, opinionated handbook covering manhood, style, behavior, society, and the wisdom of growing older as a modern gentleman."
     url: https://github.com/nplus-father/how-to-be-a-man
     topics: [hugobook, leaf-style, nplus-kind-book, nplus-portal, sub-lifestyle, top-personal]
+  - name: how-to-be-travel-writer
+    description: How to be a Travel Writer | Don George | A practical Lonely Planet guide to finding, researching, shaping and selling travel stories across newspapers, magazines, books and blogs, plus the realities of making a living on the road.
+    url: https://github.com/nplus-father/how-to-be-travel-writer
+    topics: [hugobook, leaf-non-fiction, nplus-kind-book, nplus-portal, sub-writing, top-craft]
   - name: how-to-become-a-straight-a-student
     description: How to Become a Straight-A Student | Cal Newport | Based on interviews with straight-A students, replaces long hours with pseudo-work-free study systems for exams, essays, and time management.
     url: https://github.com/nplus-father/how-to-become-a-straight-a-student
@@ -6630,6 +6638,10 @@ repos:
     description: "Turning the Flywheel: A Monograph to Accompany Good to Great | Jim Collins | A monograph extending the flywheel effect of Good to Great, showing how to capture the specific flywheel of your own enterprise, extend it into new arenas, and renew it so momentum compounds for decades."
     url: https://github.com/nplus-father/turning-the-flywheel
     topics: [hugobook, leaf-vision, nplus-kind-book, nplus-portal, sub-leadership, top-professional]
+  - name: tv-studio-production-handbook
+    description: "The TV Studio Production Handbook | Lucy Brown & Lyndsay Duthie | Walks through studio television production from pitching and commissioning to the gallery floor, with genre case studies spanning talent shows, soaps, quiz shows, news, children's TV and reality formats."
+    url: https://github.com/nplus-father/tv-studio-production-handbook
+    topics: [hugobook, leaf-media-production, nplus-kind-book, nplus-portal, sub-writing, top-craft]
   - name: twelve-and-a-half
     description: Twelve and a Half | Gary Vaynerchuk | Uses cooking as a metaphor for twelve and a half emotional ingredients—soft skills like empathy, kindness, and accountability—that Vaynerchuk argues are the real long-term differentiators in business and leadership.
     url: https://github.com/nplus-father/twelve-and-a-half
