@@ -29,7 +29,7 @@ Hugo Book Manager 是 Kotlin + Gradle 的 CLI 工具,為讀書筆記建立 GitHu
 
 ```bash
 python3 scripts/audit-overview.py <repo> | --all | --todo N | --weak N   # 深度概覽與站內簡介品檢
-python3 scripts/todo-lists.py blurb | chapter-titles | mermaid-shortcode | italic-adjacent   # 資料待辦名單，每次重算
+python3 scripts/todo-lists.py blurb | chapter-titles | mermaid-shortcode | italic-adjacent | locale   # 資料待辦名單，每次重算
 ```
 
 - `-Pname=` 無效——`Project.name` 會遮蔽它,用 `-PrepoName=`。

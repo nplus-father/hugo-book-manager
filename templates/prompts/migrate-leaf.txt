@@ -22,8 +22,8 @@ A JSON file at `ai-tasks/input/migrate-leaf-request.json` with shape:
 ```
 
 The `currentTopics` shows the legacy 2-tier classification — use it as a strong
-hint, but you may correct miscategorizations (especially for `top-faith`,
-which is new and was previously folded into `top-wisdom + sub-theology`).
+hint, but you may correct miscategorizations (especially books that belong in
+`top-faith`; see below).
 
 ## Process
 
@@ -65,8 +65,7 @@ Field rules:
 
 ## Special case: top-faith
 
-`top-faith` is a new top tier added in this migration. Move books to
-`top-faith` if their primary intent is Christian theology, biblical studies,
+Move books to `top-faith` if their primary intent is Christian theology, biblical studies,
 prayer, devotional life, or pastoral practice — even if they were previously
 under `top-wisdom + sub-theology`. Books on comparative religion or general
 philosophy of religion stay in `top-wisdom`.

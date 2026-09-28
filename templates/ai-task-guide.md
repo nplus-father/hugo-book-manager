@@ -39,12 +39,12 @@ of N books means N rounds of request → response → rerun.
 
 **Steps:**
 
-1. Read the prompt template from `promptFile` (current schema: 6-entry topics list, three-tier categories).
+1. Read the prompt template from `promptFile`.
 2. Load `templates/topic-taxonomy.yaml` so you can pick `leaf-Z` from the existing whitelist.
 3. For each book, generate metadata + docs structure.
 4. Write the combined results to `ai-tasks/output/batch-metadata-response.json`.
 
-**Output format (current schema v2):**
+**Output format:**
 
 ```json
 {
@@ -117,7 +117,7 @@ When user says **"請處理 AI 任務"** and `batch-metadata-request.json` is pr
    - Update template files
    - Download cover image
    - Create docs structure
-   - Commit + push, wait for `gh-pages`, enable Pages
+   - Commit + push, enable Pages (`build_type=workflow`)
 
 3. Report the final result to the user.
 
@@ -159,8 +159,6 @@ When user says **"請處理 AI 任務"** and `batch-metadata-request.json` is pr
 
 ## Common Mistakes to Avoid
 
-- ❌ Emitting only 5 topics (missing `leaf-Z`) — schema is now 6 entries.
-- ❌ Using legacy `category: "growth-book-summary"` — replaced by three `*Category` fields.
 - ❌ Inventing a new `sub-` or `top-` value not in the taxonomy.
 - ❌ Omitting `blurb`, or filling it with the English Brief / a 200-character translation of it.
 - ❌ Wrong topic order — must be `[hugobook, nplus-portal, nplus-kind-book, leaf, sub, top]`.

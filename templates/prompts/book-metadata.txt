@@ -55,14 +55,14 @@ Rules:
    Do NOT use legacy topics like "book-summary", "<category>-book-summary", or other ad-hoc keywords.
 5. Three-tier taxonomy (full whitelist in `templates/topic-taxonomy.yaml`):
    - top values:  top-personal, top-professional, top-craft, top-wisdom, top-faith
-   - sub values:  sub-mindset, sub-habit, sub-wellness, sub-relationships,
-                  sub-philosophy, sub-history, sub-science,
-                  sub-engineering, sub-design, sub-writing, sub-tools,
-                  sub-communication, sub-leadership, sub-business, sub-finance, sub-career, sub-education,
+   - sub values:  sub-mindset, sub-habit, sub-wellness, sub-relationships, sub-lifestyle,
+                  sub-philosophy, sub-history, sub-science, sub-education,
+                  sub-engineering, sub-design, sub-writing,
+                  sub-communication, sub-leadership, sub-business, sub-finance, sub-career,
                   sub-theology, sub-spiritual-formation
    - leaf values: open-ended; **first try to fit into an existing leaf in `topic-taxonomy.yaml`**.
-                  If no good fit, propose a new kebab-case `leaf-<Z>` and (silently) add it via the
-                  taxonomy file later. Do not invent new top or sub values.
+                  If no good fit, propose a new kebab-case `leaf-<Z>`; a human adds it to the
+                  taxonomy file after review. Do not invent new top or sub values.
 6. topCategory / subCategory / leafCategory: same value as topics #6/#5/#4 respectively but **without** the prefix.
    These three fields decide the archive folder `books-done/<topCategory>/<subCategory>/<leafCategory>/<repoName>`
    once the overview is written; the initial clone is flat in new-books.
