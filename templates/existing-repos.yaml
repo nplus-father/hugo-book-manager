@@ -1,6 +1,6 @@
 # Cached snapshot of book repos on the configured owner.
 # Refresh with: ./gradlew refreshRepoIndex
-last_updated: "2026-09-26T16:58:24.578741693+08:00"
+last_updated: "2026-09-28T15:37:31.326656411+08:00"
 repos:
   - name: 10-percent-entrepreneur
     description: The 10% Entrepreneur | Patrick J. McGinnis | A practical playbook for launching a side venture without quitting the day job, devoting just 10% of your time and resources to entrepreneurship.
@@ -119,7 +119,7 @@ repos:
     url: https://github.com/nplus-father/30-day-mba
     topics: [hugobook, leaf-marketing, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: 30-days-of-gitlab
-    description: 和艦長一起 30 天玩轉 GitLab | 陳正瑋（Cheng Wei Chen） | 以 GitLab 為核心，從 DevOps 文化到 CI/CD 實戰的完整入門指南。
+    description: 和艦長一起 30 天玩轉 GitLab | 陳正瑋 | 以 GitLab 為核心，從 DevOps 文化到 CI/CD 實戰的完整入門指南。
     url: https://github.com/nplus-father/30-days-of-gitlab
     topics: [hugobook, leaf-devops, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: 33-strategies-of-war
@@ -831,7 +831,7 @@ repos:
     url: https://github.com/nplus-father/big-debt-crises
     topics: [hugobook, leaf-economics, nplus-kind-book, nplus-portal, sub-finance, tag-brick, top-professional]
   - name: big-refactoring
-    description: 大話重構：軟體重構實戰指南 | 王洋 | 從重構基礎、技巧到大規模重構與實戰案例的軟體重構實踐指南
+    description: 大話重構：軟體重構實戰指南 | 范鋼 | 從重構基礎、技巧到大規模重構與實戰案例的軟體重構實踐指南
     url: https://github.com/nplus-father/big-refactoring
     topics: [hugobook, leaf-coding-practice, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: big-short
@@ -1278,6 +1278,10 @@ repos:
     description: "Company of One | Paul Jarvis | Challenges the Silicon Valley \"growth at all costs\" gospel, arguing that deliberately staying small and questioning the need for growth produces a more resilient, autonomous business that lets work and life coexist."
     url: https://github.com/nplus-father/company-of-one
     topics: [hugobook, leaf-strategy, nplus-kind-book, nplus-portal, sub-business, tag-primer, top-professional]
+  - name: compensation-canadian-edition
+    description: "Compensation, Sixth Canadian Edition | Margaret Yap et al. | A Canadian textbook built on the pay model: internal alignment, external competitiveness, employee contributions, and administration, covering job evaluation, market surveys, pay-for-performance, and benefits."
+    url: https://github.com/nplus-father/compensation-canadian-edition
+    topics: [hugobook, leaf-human-resources, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: competing-against-luck
     description: "Competing Against Luck | Clayton M. Christensen et al. | The 'Jobs to be Done' theory: customers don't buy products, they hire them to make progress in their lives."
     url: https://github.com/nplus-father/competing-against-luck
@@ -1643,7 +1647,7 @@ repos:
     url: https://github.com/nplus-father/difference-maker
     topics: [hugobook, leaf-emotion, nplus-kind-book, nplus-portal, sub-mindset, top-personal]
   - name: difference-that-makes-the-difference
-    description: "The Difference That Makes the Difference | Joseph O'Connor & Andrea Lages | Grounded in NLP, the book offers practical tools for understanding and changing mental models—across building beliefs, communicating, and shifting behavior."
+    description: The Difference That Makes the Difference | Josh Davis & Greg Prosmushkin | Grounded in NLP, the book offers practical tools for understanding and changing mental models—across building beliefs, communicating, and shifting behavior.
     url: https://github.com/nplus-father/difference-that-makes-the-difference
     topics: [hugobook, leaf-growth, nplus-kind-book, nplus-portal, sub-mindset, top-personal]
   - name: different-drum
@@ -2026,6 +2030,10 @@ repos:
     description: Fallen Leaves | Will Durant | Twenty-two short, posthumously published essays in which the historian distills his lifetime of reflection on youth, age, religion, race, sex, war, capitalism, art, and the lessons of history.
     url: https://github.com/nplus-father/fallen-leaves
     topics: [hugobook, leaf-life-philosophy, nplus-kind-book, nplus-portal, sub-philosophy, tag-classic, tag-primer, top-wisdom]
+  - name: fearless-organization
+    description: The Fearless Organization | Amy C. Edmondson | Explains psychological safety, shows through cases how its absence causes avoidable failure and dangerous silence, and gives leaders a toolkit to build workplaces where people speak up.
+    url: https://github.com/nplus-father/fearless-organization
+    topics: [hugobook, leaf-culture, nplus-kind-book, nplus-portal, sub-leadership, top-professional]
   - name: feeling-good
     description: Feeling Good | David D. Burns | The classic self-help manual of cognitive therapy, showing how to identify the ten cognitive distortions that manufacture depression, anger and guilt, and how to talk back to them on paper.
     url: https://github.com/nplus-father/feeling-good
@@ -2123,7 +2131,7 @@ repos:
     url: https://github.com/nplus-father/five-dysfunctions-of-a-team
     topics: [hugobook, leaf-team-building, nplus-kind-book, nplus-portal, sub-leadership, tag-classic, tag-primer, top-professional]
   - name: five-key-numbers
-    description: 不懂財報，也能輕鬆選出賺錢績優股 | 林明樟（MJ） | 用「比氣長、翻桌率、好生意、那根棒子、能還嗎」五大關鍵數字力，把現金流量、經營能力、獲利、財務結構與償債能力翻成白話，教投資人一小時挑出賺錢績優股。
+    description: 不懂財報，也能輕鬆選出賺錢績優股 | 林明樟 | 用「比氣長、翻桌率、好生意、那根棒子、能還嗎」五大關鍵數字力，把現金流量、經營能力、獲利、財務結構與償債能力翻成白話，教投資人一小時挑出賺錢績優股。
     url: https://github.com/nplus-father/five-key-numbers
     topics: [hugobook, leaf-investing, nplus-kind-book, nplus-portal, sub-finance, top-professional]
   - name: five-lines-of-code
@@ -3086,6 +3094,14 @@ repos:
     description: How Will You Measure Your Life? | Clayton M. Christensen, James Allworth & Karen Dillon | The Harvard Business School professor brings management theory to bear on three life questions—career, relationships, integrity—offering a way of thinking, not standard answers.
     url: https://github.com/nplus-father/how-will-you-measure-your-life
     topics: [hugobook, leaf-resilience, nplus-kind-book, nplus-portal, sub-mindset, tag-classic, tag-primer, top-personal]
+  - name: hr-from-outside-in
+    description: HR from the Outside In | Dave Ulrich et al. | Drawing on the sixth round of the HR Competency Study, defines six competencies HR professionals need to create value for customers, investors, and communities outside the firm.
+    url: https://github.com/nplus-father/hr-from-outside-in
+    topics: [hugobook, leaf-human-resources, nplus-kind-book, nplus-portal, sub-business, top-professional]
+  - name: human-resource-management
+    description: Human Resource Management | Gary Dessler | A comprehensive HR textbook covering strategy, employment law, job analysis, recruiting and selection, training, performance management, compensation, employee and labor relations, safety, and global HR.
+    url: https://github.com/nplus-father/human-resource-management
+    topics: [hugobook, leaf-human-resources, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: humble-inquiry
     description: "Humble Inquiry | Edgar H. Schein | The MIT Sloan emeritus argues that telling-driven cultures fail in complex work, and offers \"humble inquiry\"—the gentle art of drawing someone out by asking, not telling—as the foundation for trust, relationships, and effective organizations."
     url: https://github.com/nplus-father/humble-inquiry
@@ -3251,7 +3267,7 @@ repos:
     url: https://github.com/nplus-father/insight
     topics: [hugobook, leaf-self-awareness, nplus-kind-book, nplus-portal, sub-mindset, top-personal]
   - name: institutes-of-christian-religion
-    description: 基督教要義 | John Calvin (約翰·加爾文) | 加爾文系統神學經典，論創造主與救贖主的知識、領受恩典之道與蒙恩管道
+    description: 基督教要義 | John Calvin | 加爾文系統神學經典，論創造主與救贖主的知識、領受恩典之道與蒙恩管道
     url: https://github.com/nplus-father/institutes-of-christian-religion
     topics: [hugobook, leaf-systematic, nplus-kind-book, nplus-portal, sub-theology, tag-brick, tag-classic, top-faith]
   - name: integrity
@@ -3283,7 +3299,7 @@ repos:
     url: https://github.com/nplus-father/into-the-woods
     topics: [hugobook, leaf-screenwriting, nplus-kind-book, nplus-portal, sub-writing, top-craft]
   - name: introduction-to-nt-research
-    description: 新約聖經研究導論 | 中華福音神學院師資群編 | 涵蓋新約背景、經書研讀方法與各卷書導論的研究入門
+    description: 新約聖經研究導論 | 孫寶玲 | 涵蓋新約背景、經書研讀方法與各卷書導論的研究入門
     url: https://github.com/nplus-father/introduction-to-nt-research
     topics: [hugobook, leaf-systematic, nplus-kind-book, nplus-portal, sub-theology, tag-brick, tag-toolbox, top-faith]
   - name: intuition-pumps
@@ -3987,7 +4003,7 @@ repos:
     url: https://github.com/nplus-father/maximum-achievement
     topics: [hugobook, leaf-growth, nplus-kind-book, nplus-portal, sub-mindset, top-personal]
   - name: mba-confidential
-    description: 沒人敢告訴你的MBA大揭密 | （作者待補） | 一位 MBA 畢業生的犀利告白，拆解 MBA 迷思並反思學位的真正價值。
+    description: 沒人敢告訴你的MBA大揭密 | 阿部昆 | 一位 MBA 畢業生的犀利告白，拆解 MBA 迷思並反思學位的真正價值。
     url: https://github.com/nplus-father/mba-confidential
     topics: [hugobook, leaf-persuasion, nplus-kind-book, nplus-portal, sub-communication, top-professional]
   - name: mckinsey-39-work-habits
@@ -4055,7 +4071,7 @@ repos:
     url: https://github.com/nplus-father/memories-dreams-reflections
     topics: [hugobook, leaf-cognitive, nplus-kind-book, nplus-portal, sub-science, tag-brick, tag-classic, top-wisdom]
   - name: mental-fitness
-    description: "刻意進化:突破極限的心智鍛鍊 | Eric Potterat, Alan Eagle | 從致勝心態、逆境韌性到平衡恢復，鍛鍊突破極限的心智"
+    description: "刻意進化:突破極限的心智鍛鍊 | Eric Potterat & Alan Eagle | 從致勝心態、逆境韌性到平衡恢復，鍛鍊突破極限的心智"
     url: https://github.com/nplus-father/mental-fitness
     topics: [hugobook, leaf-self-learning, nplus-kind-book, nplus-portal, sub-education, top-wisdom]
   - name: mere-christianity
@@ -4510,6 +4526,10 @@ repos:
     description: Nine Algorithms That Changed the Future | John MacCormick | Through intuitive analogies and zero math, the book reveals the core ideas behind nine algorithm families—search, encryption, compression, and more—showing the elegance at the heart of computer science.
     url: https://github.com/nplus-father/nine-algorithms-that-changed-the-future
     topics: [hugobook, leaf-coding-practice, nplus-kind-book, nplus-portal, sub-engineering, tag-primer, top-craft]
+  - name: nine-lies-about-work
+    description: Nine Lies About Work | Marcus Buckingham & Ashley Goodall | Debunks nine widely held workplace beliefs—from cascading goals and 360 ratings to well-roundedness and work-life balance—and replaces each with a truth grounded in how teams actually work.
+    url: https://github.com/nplus-father/nine-lies-about-work
+    topics: [hugobook, leaf-management, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: nine-things-successful-people-do-differently
     description: Nine Things Successful People Do Differently | Heidi Grant Halvorson | The social psychologist consolidates motivation and goal-pursuit research into nine practicable habits—specific goals, if-then plans, mental contrasting, growth mindset, willpower management—turning academic findings into a strategy handbook.
     url: https://github.com/nplus-father/nine-things-successful-people-do-differently
@@ -4587,7 +4607,7 @@ repos:
     url: https://github.com/nplus-father/object-oriented-design-interview
     topics: [hugobook, leaf-coding-practice, nplus-kind-book, nplus-portal, sub-engineering, tag-toolbox, top-craft]
   - name: observability-beginners-guide
-    description: 可觀測性入門指南 | 劉義瑋（Blueswen） | 以 Grafana 生態系為核心，系統性介紹可觀測性三大支柱（Metrics、Logs、Traces）的工具鏈與實踐方法，涵蓋 Prometheus、Loki、Tempo、OpenTelemetry 等現代技術棧。
+    description: 可觀測性入門指南 | 劉義瑋 | 以 Grafana 生態系為核心，系統性介紹可觀測性三大支柱（Metrics、Logs、Traces）的工具鏈與實踐方法，涵蓋 Prometheus、Loki、Tempo、OpenTelemetry 等現代技術棧。
     url: https://github.com/nplus-father/observability-beginners-guide
     topics: [hugobook, leaf-coding-practice, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: observability-engineering
@@ -4911,7 +4931,7 @@ repos:
     url: https://github.com/nplus-father/pleasures-and-sorrows-of-work
     topics: [hugobook, leaf-life-philosophy, nplus-kind-book, nplus-portal, sub-philosophy, top-wisdom]
   - name: podcast-producer-guide
-    description: 破億下載 Podcast 製作人的經營指南 | 粘瀚文 Billy Nien | 累積破億收聽的《大人的 Small Talk》製作人，以五年實戰經驗系統化拆解 Podcast 從節目定位、內容規劃到商業變現的完整經營方法論。
+    description: 破億下載 Podcast 製作人的經營指南 | 粘瀚文 | 累積破億收聽的《大人的 Small Talk》製作人，以五年實戰經驗系統化拆解 Podcast 從節目定位、內容規劃到商業變現的完整經營方法論。
     url: https://github.com/nplus-father/podcast-producer-guide
     topics: [hugobook, leaf-media-production, nplus-kind-book, nplus-portal, sub-writing, top-craft]
   - name: poet-and-peasant
@@ -6274,6 +6294,10 @@ repos:
     description: Systems Performance | Brendan Gregg | 建立作業系統與雲端環境的效能分析方法論，以 USE 方法貫穿 CPU、記憶體、檔案系統與網路，強調先量測再優化。
     url: https://github.com/nplus-father/systems-performance
     topics: [hugobook, leaf-systems-design, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
+  - name: taiwan-labor-standards-and-work-rules
+    description: 勞動基準法與工作規則參考手冊 | 勞動部 | 收錄勞動基準法全文十二章，並整理勞動部工作規則參考範本、審核要點與常見問答，作為雇主訂定工作規則的法定底線。
+    url: https://github.com/nplus-father/taiwan-labor-standards-and-work-rules
+    topics: [hugobook, leaf-human-resources, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: take-charge-of-your-life
     description: Take Charge of Your Life | Brian Tracy | The 12 master skills for personal mastery — from taking responsibility and clarifying values to financial independence and using the power of leverage.
     url: https://github.com/nplus-father/take-charge-of-your-life
@@ -6422,6 +6446,10 @@ repos:
     description: Thank You for Arguing | Jay Heinrichs | Combines Aristotle, Cicero, and pop culture into a practical guide to rhetoric—training readers to recognize, deploy, and defend against persuasive techniques in everyday life.
     url: https://github.com/nplus-father/thank-you-for-arguing
     topics: [hugobook, leaf-persuasion, nplus-kind-book, nplus-portal, sub-communication, tag-classic, top-professional]
+  - name: thanks-for-feedback
+    description: Thanks for the Feedback | Douglas Stone & Sheila Heen | Shows how truth, relationship, and identity triggers block us from hearing feedback, and how receivers can learn from it even when it is off base or badly delivered.
+    url: https://github.com/nplus-father/thanks-for-feedback
+    topics: [hugobook, leaf-workplace-relations, nplus-kind-book, nplus-portal, sub-communication, top-professional]
   - name: that-will-never-work
     description: "That Will Never Work | Marc Randolph | The co-founder's first-person account of how Netflix actually started — from the doomed idea sketch to launch crisis, the IPO, and the founder's hard-won lessons on entrepreneurship."
     url: https://github.com/nplus-father/that-will-never-work
@@ -6471,7 +6499,7 @@ repos:
     url: https://github.com/nplus-father/think-twice-harnessing-the-power-of-counterintuition
     topics: [hugobook, leaf-critical-thinking, nplus-kind-book, nplus-portal, sub-mindset, top-personal]
   - name: thinking-101
-    description: 思考 101：耶魯大學改變人生的一堂思辨課 | Woo-kyoung Ahn (安宇敬) | 耶魯熱門思辨課，剖析流暢度錯覺、確認偏誤等思考謬誤與對策
+    description: 思考 101：耶魯大學改變人生的一堂思辨課 | Woo-kyoung Ahn | 耶魯熱門思辨課，剖析流暢度錯覺、確認偏誤等思考謬誤與對策
     url: https://github.com/nplus-father/thinking-101
     topics: [hugobook, leaf-critical-thinking, nplus-kind-book, nplus-portal, sub-mindset, tag-primer, top-personal]
   - name: thinking-fast-and-slow
@@ -6766,6 +6794,10 @@ repos:
     description: The Victory of Reason | Rodney Stark | 史塔克以社會學-歷史方法挑戰啟蒙以來「宗教 vs 理性」的敘事，論證科學、資本主義與西方自由並非脫離基督教而生，而是基督教理性神學的直接產物。
     url: https://github.com/nplus-father/victory-of-reason
     topics: [hugobook, leaf-historical, nplus-kind-book, nplus-portal, sub-theology, top-faith]
+  - name: victory-through-organization
+    description: Victory Through Organization | Dave Ulrich et al. | Using HR Competency Study data, argues that organization capabilities outweigh individual talent in driving business results, and identifies the HR practices and competencies that matter most.
+    url: https://github.com/nplus-father/victory-through-organization
+    topics: [hugobook, leaf-human-resources, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: vietnam-new-history
     description: "Vietnam: A New History | Christopher Goscha | Rejects a single-nation narrative to trace the many Vietnams — dynastic, colonial, republican and communist — from antiquity to the present, placing the country in Asian and global history."
     url: https://github.com/nplus-father/vietnam-new-history
@@ -7087,7 +7119,7 @@ repos:
     url: https://github.com/nplus-father/why-zebras-dont-get-ulcers
     topics: [hugobook, leaf-biology, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: wild-at-heart
-    description: 我心狂野 | 艾傑奇 (John Eldredge) | 喚醒男性與生俱來的野性與冒險之心，從傷痕中奪回男兒心
+    description: 我心狂野 | John Eldredge | 喚醒男性與生俱來的野性與冒險之心，從傷痕中奪回男兒心
     url: https://github.com/nplus-father/wild-at-heart
     topics: [hugobook, leaf-devotional, nplus-kind-book, nplus-portal, sub-spiritual-formation, top-faith]
   - name: willpower
