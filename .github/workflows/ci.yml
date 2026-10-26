@@ -37,18 +37,6 @@ jobs:
           ./gradlew installDist --quiet
           ./build/install/hugo-book-manager/bin/hugo-book-manager --help
 
-      # The runner image must not bake Hugo: hugobook-build-deploy.yml installs
-      # it per job and fails on a version mismatch, so a baked copy can shadow
-      # the right one. Keeping the version in one place is also what makes Hugo
-      # bumps safe to automerge — re-adding it here would silently undo that.
-      - name: Runner image must not bake Hugo
-        run: |
-          if grep -v '^\s*#' gh-runner/Dockerfile.runner | grep -i hugo; then
-            echo "::error::gh-runner/Dockerfile.runner installs Hugo again. See the comment at the top of that file."
-            exit 1
-          fi
-          echo "OK: no Hugo baked into the runner image"
-
       - name: Upload test report
         if: failure()
         uses: actions/upload-artifact@v7

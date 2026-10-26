@@ -5,10 +5,7 @@ import com.github.ajalt.clikt.core.main
 import com.github.ajalt.clikt.core.subcommands
 import com.nplus.bookmanager.command.CheckEnvCommand
 import com.nplus.bookmanager.command.InitBooksCommand
-import com.nplus.bookmanager.command.MarkReadCommand
-import com.nplus.bookmanager.command.MigrateTopicTiersCommand
 import com.nplus.bookmanager.command.RefreshBookHealthCommand
-import com.nplus.bookmanager.command.RefreshGoalProgressCommand
 import com.nplus.bookmanager.command.RefreshOverviewCoverageCommand
 import com.nplus.bookmanager.command.RefreshRepoIndexCommand
 
@@ -29,10 +26,7 @@ fun main(args: Array<String>) {
             CheckEnvCommand(),
             InitBooksCommand(),
             RefreshRepoIndexCommand(),
-            RefreshGoalProgressCommand(),
             RefreshBookHealthCommand(),
             RefreshOverviewCoverageCommand(),
-            MarkReadCommand(),
-            MigrateTopicTiersCommand(),
         ).main(args)
 }

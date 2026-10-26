@@ -9,6 +9,9 @@ GitHub repositories，並產生 portal 儀表板吃的衍生資料檔。
 src/                  # Kotlin CLI 本體（Clikt subcommands + services）
 scripts/
 ├── audit-overview.py     # 深度概覽品檢：單本 gate ＋ 全庫掃描（--all/--json/--todo/--weak）
+├── audit-empty-leaves.py # 列出內文過薄的葉章節
+├── todo-lists.py         # 資料待辦名單（blurb、章節標題、Mermaid shortcode…），每次重算
+├── fleet-push.sh         # /fleet-push skill 從這裡跑
 └── handbook-cover/       # 手冊站封面產生器（SVG → PNG）
 templates/
 ├── books-queue.yaml          # 建書佇列（gitignore；範本見 books-queue.example.yaml）
@@ -17,8 +20,6 @@ templates/
 ├── ai-task-guide.md          # 「請處理 AI 任務」的處理指引
 └── prompts/                  # AI 任務的 prompt 模板
 ai-tasks/             # AI 任務交換區（input/ CLI 寫，output/ Claude 寫；內容 gitignore）
-gh-runner/            # self-hosted runner 映像與 compose（CI 有 guard：映像不得內建 Hugo）
-podcasts/             # 兩個 Podcast 頻道的規劃文件與逐字稿工具（與 CLI 無關的同居租戶）
 ```
 
 ## 設定
@@ -39,9 +40,8 @@ HOMEPAGE_BASE_URL=https://nplus.wiki
 | `DEFAULT_WORK_DIR` | ✅ | 新書 clone 的落地目錄。**這層是扁平的**（`<workDir>/<repoName>`）；三層分類只在書畢業搬進 `books-done/` 時才套用 |
 | `TEMPLATE_REPO` | ✅ | 建新書用的模板 repo，格式 `owner/repo` |
 | `HOMEPAGE_BASE_URL` | ✅ | repo homepage 的前綴，最終為 `{base}/{repoName}/` |
-| `PORTAL_DIR` | — | nplus.wiki portal 的本機 clone；`refreshGoalProgress` / `refreshBookHealth` / `refreshOverviewCoverage` 需要 |
-| `NOTES_DIR` | — | Astro note 站所在的工作區，`refreshGoalProgress` 需要 |
-| `BOOKS_DIR` | — | `books-done` 根目錄；`refreshBookHealth` / `refreshOverviewCoverage` / `migrateTopicTiers` 需要 |
+| `PORTAL_DIR` | — | nplus.wiki portal 的本機 clone；`refreshBookHealth` / `refreshOverviewCoverage` 需要 |
+| `BOOKS_DIR` | — | `books-done` 根目錄；`refreshBookHealth` / `refreshOverviewCoverage` 需要 |
 
 ## 指令
 
@@ -56,20 +56,14 @@ HOMEPAGE_BASE_URL=https://nplus.wiki
 ./gradlew initBooks -Pid=<book-id> -Preset=true   # 重設為 pending
 
 # portal 衍生檔（跑完要 commit + push portal repo 才會上儀表板）
-./gradlew refreshGoalProgress     # src/data/progress.json（目標追蹤）
 ./gradlew refreshBookHealth       # src/data/health.json（內容厚度 → /health/）
 ./gradlew refreshOverviewCoverage # src/data/overview.json（深度概覽改寫進度 → /health/）
-
-# 其他
-./gradlew markRead -Prepo=<repo> [-Pchapter=<dir>]
-./gradlew migrateTopicTiers -Papply=true -PrepoName=<repo>   # 預設 dry-run
 ```
 
 > Gradle 不吃裸旗標。`--status` / `--reset` 這類要寫成 `-Pstatus=true` / `-Preset=true`。
-> `-Pname=` 無效——`Project.name` 會遮蔽它，用 `-PrepoName=`。
 
 衍生檔皆為 B 架構的本地端：portal 的 `fetch-*.ts` 每日從部署站台自動更新同一批檔案，
-本地指令給「剛改完想馬上看」。詳見各 service 的 KDoc。
+本地指令給「剛改完想馬上看」。
 
 ## AI 任務處理
 
@@ -87,4 +81,4 @@ HOMEPAGE_BASE_URL=https://nplus.wiki
 ./gradlew test spotlessCheck      # commit 前必跑；CI 跑同樣兩項加 CLI smoke test
 ```
 
-慣例與 gotchas（ProcessRunner、MigrationPlanner…）見 [CLAUDE.md](CLAUDE.md)。
+慣例與 gotchas（ProcessRunner…）見 [CLAUDE.md](CLAUDE.md)。

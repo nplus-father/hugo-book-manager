@@ -24,7 +24,6 @@ object AppConfig {
             "TEMPLATE_REPO",
             "HOMEPAGE_BASE_URL",
             "PORTAL_DIR",
-            "NOTES_DIR",
             "BOOKS_DIR",
         )
 
@@ -57,9 +56,6 @@ object AppConfig {
 
     val portalDir: String
         get() = getProperty("PORTAL_DIR") ?: ""
-
-    val notesDir: String
-        get() = getProperty("NOTES_DIR") ?: ""
 
     val booksDir: String
         get() = getProperty("BOOKS_DIR") ?: ""
