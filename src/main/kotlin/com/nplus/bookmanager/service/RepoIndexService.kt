@@ -63,8 +63,8 @@ class RepoIndexService(
 
     fun fetchFromGitHub(owner: String): RepoIndex {
         val cmd =
-            "unset GITHUB_TOKEN; " +
-                "gh api --paginate '/orgs/$owner/repos?per_page=100' " +
+            "{ (unset GITHUB_TOKEN; gh api --paginate '/orgs/$owner/repos?per_page=100' 2>/dev/null) " +
+                "|| gh api --paginate '/orgs/$owner/repos?per_page=100'; } " +
                 "| jq -s '[.[][] | select(.topics | index(\"hugobook\")) " +
                 "| {name, description, url: .html_url, topics}]'"
         val output =

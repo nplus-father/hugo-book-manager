@@ -28,6 +28,11 @@ class RefreshRepoIndexCommand(
                 return
             }
 
+        if (index.repos.isEmpty()) {
+            println("Error: GitHub returned no book repos for $owner; keeping ${service.indexFile.path} as it is")
+            return
+        }
+
         service.save(index)
         println("✅ Saved ${index.repos.size} repo(s) to ${service.indexFile.path}")
 
