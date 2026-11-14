@@ -26,7 +26,8 @@ Hugo Book Manager 是 Kotlin + Gradle 的 CLI 工具,為讀書筆記建立 GitHu
 
 ```bash
 python3 scripts/audit-overview.py <repo> | --all | --todo N | --weak N   # 深度概覽與站內簡介品檢
-python3 scripts/todo-lists.py blurb | chapter-titles | mermaid-shortcode | italic-adjacent | locale   # 資料待辦名單，每次重算
+python3 scripts/todo-lists.py blurb | chapter-titles | mermaid-shortcode | italic-adjacent | locale | images | mermaid-dup   # 資料待辦名單，每次重算；--root 可指單一本書
+python3 scripts/slim-images.py [--apply] <book-repo|資料夾|圖檔>...   # 內文圖瘦身，不給 --apply 只報告
 ```
 
 - Commit 前跑 `./gradlew test spotlessCheck`;CI 跑同樣兩項加 CLI smoke test。
