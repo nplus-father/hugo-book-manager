@@ -215,18 +215,39 @@ def cmd_mermaid_dup(root):
     sys.stderr.write("%d 本、%d 個 Mermaid 前後 %d 行內有圖片，需人工判斷是否同一張圖畫兩次\n" % (len(books), hits, DUP_WINDOW))
 
 
+CJK_TITLE = re.compile(r"《([^《》\n]{1,40})》")
+LATIN_NEAR = re.compile(r"[（(]\s*_?\*?([A-Z][^（）()\n]{2,80}?)\*?_?\s*[，,；;）)]|[（(][^（）()\n]{0,12}?_([A-Z][^_\n]{2,80})_")
+
+
+def cmd_cjk_titles(root):
+    books, rows = set(), 0
+    for b in audit.find_books(root):
+        _, _, blk = audit.read_overview(b)
+        if not blk:
+            continue
+        for m in CJK_TITLE.finditer(blk):
+            tail = blk[m.end():m.end() + 90]
+            latin = LATIN_NEAR.match(tail)
+            if not latin:
+                continue
+            books.add(b)
+            rows += 1
+            print("%s\t《%s》\t%s" % (rel(b, root), m.group(1), (latin.group(1) or latin.group(2)).strip()))
+    sys.stderr.write("%d 本概覽、%d 個《中文書名》後面緊接外文原名：每一個都要能在博客來查到該台版書名，查不到就改回原名\n" % (len(books), rows))
+
+
 def main():
     ap = argparse.ArgumentParser(description="書庫資料待辦名單（純檔案掃描，每次重算，不存狀態）")
-    ap.add_argument("list", choices=["blurb", "chapter-titles", "mermaid-shortcode", "italic-adjacent", "locale", "images", "mermaid-dup"],
+    ap.add_argument("list", choices=["blurb", "chapter-titles", "mermaid-shortcode", "italic-adjacent", "locale", "images", "mermaid-dup", "cjk-titles"],
                     help="blurb：長度不在 30–75、非中文、含標記或缺欄位；chapter-titles：docs/ 章節 title 不是中文；"
                          "mermaid-shortcode：仍用 {{< mermaid >}}；italic-adjacent：概覽 _Title_ 緊貼漢字；"
                          "locale：hugo.toml locale 不是 zh-Hant-TW；images：內文圖超標、封面不合規、沒被引用的圖；"
-                         "mermaid-dup：Mermaid 緊鄰圖片，可能同一張圖畫兩次")
+                         "mermaid-dup：Mermaid 緊鄰圖片，可能同一張圖畫兩次；cjk-titles：概覽裡附外文原名的《中文書名》，待查證是否為台版譯名")
     ap.add_argument("--root", default=audit.DEFAULT_ROOT)
     a = ap.parse_args()
     {"blurb": cmd_blurb, "chapter-titles": cmd_chapter_titles,
      "mermaid-shortcode": cmd_mermaid, "italic-adjacent": cmd_italic, "locale": cmd_locale,
-     "images": cmd_images, "mermaid-dup": cmd_mermaid_dup}[a.list](a.root)
+     "images": cmd_images, "mermaid-dup": cmd_mermaid_dup, "cjk-titles": cmd_cjk_titles}[a.list](a.root)
     return 0
 
 
