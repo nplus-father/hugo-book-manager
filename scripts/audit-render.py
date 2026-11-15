@@ -29,7 +29,7 @@ PROSE = re.compile(
 )
 HOME = re.compile(r'<main class="?page"? id="?main"?>(.*?)<section class="?sec"? id="?contents"?', re.S)
 
-LITERAL_STARS = re.compile(r"\*\*\*|顯著|信心水準|[pP]\s*[<＜]|significan")
+LITERAL_STARS = re.compile(r"\*\*\*|^\s*\*\*?\s|顯著|信心水準|[pP]\s*[<＜]|significan")
 
 TEXT_RULES = [
     ("leaked-bold", re.compile(r"(?<!\*)\*\*(?!\*)(?!\s*p\s*[<＜=])(?!\s*\d+(?:\.\d+)?\s*%)")),
