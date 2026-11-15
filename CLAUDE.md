@@ -31,7 +31,13 @@ python3 scripts/slim-images.py [--apply] <book-repo|資料夾|圖檔>...   # 內
 python3 scripts/pdf-text.py <book.pdf> <out.txt> [--map GLYPH=TEXT]   # PDF 轉 txt，補回舊式數字（PUA）與連字
 python3 scripts/crop-vector-figures.py <book.pdf> <outdir> [--pages N,M] [--caption-font F]   # 依 FIGURE 圖說裁出向量圖
 python3 scripts/audit-render.py <book-repo|資料夾>... | --all [--theme <nplus-book-core 工作樹>]   # 實際建站後掃輸出頁面
+python3 scripts/mermaid-svg.py <book-repo|資料夾>... | --all [--check]   # Mermaid 預先畫成淺色／深色 SVG
 ```
+
+- `mermaid-svg.py` 把每段 ```` ```mermaid ```` 用主題 `static/mermaid.min.js` 畫成 `site/assets/mermaid/<sha256>.svg` 與 `.dark.svg`，
+  刪掉已沒有對應原始碼的舊檔。主題（v1.26.0 起）找得到就直接嵌入，讀者端不必下載 3.5 MB 的 Mermaid；找不到（新增或改過的圖）
+  就退回瀏覽器端繪製，所以不會顯示過期的圖。書 repo 的 pre-commit hook 提交含 Mermaid 的 Markdown 時會自動跑。
+  需要 `~/.cache/nplus-book/mermaid-cli` 裡的 playwright（沒有時腳本會印出安裝指令）。
 
 - `audit-render.py` 用正式的模組模式建站（不給 `--theme` 就抓已發布的最新 tag），抓建站失敗與警告、外露的 `**`／提示框標記／shortcode、
   KaTeX 錯誤、失效的圖與站內連結。`--all` 涵蓋 books-done、new-books 與 handbooks，約半小時；大批改內容或改主題後跑。
