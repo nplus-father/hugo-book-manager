@@ -57,7 +57,10 @@ def find_books(paths):
             if os.path.isfile(os.path.join(current, "site", "hugo.toml")):
                 books.append(current)
                 dirs[:] = []
-    return [b for b in books if os.path.basename(b) != "hugo-book-template"]
+    return [
+        b for b in books
+        if os.path.basename(b) != "hugo-book-template" and os.path.isdir(os.path.join(b, "site", "content"))
+    ]
 
 
 def visible_text(body):
@@ -104,6 +107,13 @@ def scan_page(out, file):
 
 
 def audit(book, theme, hugo):
+    try:
+        return audit_one(book, theme, hugo)
+    except Exception as e:
+        return book, [("audit-error", "", f"{type(e).__name__}: {e}"[:300])]
+
+
+def audit_one(book, theme, hugo):
     name = os.path.basename(book)
     work = tempfile.mkdtemp(prefix="audit-render-")
     issues = []
