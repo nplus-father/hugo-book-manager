@@ -28,7 +28,12 @@ Hugo Book Manager 是 Kotlin + Gradle 的 CLI 工具,為讀書筆記建立 GitHu
 python3 scripts/audit-overview.py <repo> | --all | --todo N | --weak N   # 深度概覽與站內簡介品檢
 python3 scripts/todo-lists.py blurb | chapter-titles | mermaid-shortcode | italic-adjacent | locale | images | mermaid-dup | cjk-titles   # 資料待辦名單，每次重算；--root 可指單一本書
 python3 scripts/slim-images.py [--apply] <book-repo|資料夾|圖檔>...   # 內文圖瘦身，不給 --apply 只報告
+python3 scripts/audit-render.py <book-repo|資料夾>... | --all [--theme <nplus-book-core 工作樹>]   # 實際建站後掃輸出頁面
 ```
+
+- `audit-render.py` 用正式的模組模式建站（不給 `--theme` 就抓已發布的最新 tag），抓建站失敗與警告、外露的 `**`／提示框標記／shortcode、
+  KaTeX 錯誤、失效的圖與站內連結。`--all` 涵蓋 books-done、new-books 與 handbooks，約半小時；大批改內容或改主題後跑。
+  `todo-lists.py` 看的是源檔，這支看的是讀者實際看到的頁面，兩者互補。
 
 - Commit 前跑 `./gradlew test spotlessCheck`;CI 跑同樣兩項加 CLI smoke test。
 - 書本專案的維護任務(KaTeX、Mermaid、翻譯等)用全域 `/book-*` slash commands,不用 in-repo prompt templates。
