@@ -1,6 +1,6 @@
 # Cached snapshot of book repos on the configured owner.
 # Refresh with: ./gradlew refreshRepoIndex
-last_updated: "2026-11-09T01:17:19.1536292+08:00"
+last_updated: "2026-11-15T11:28:06.93136165+08:00"
 repos:
   - name: 10-percent-entrepreneur
     description: The 10% Entrepreneur | Patrick J. McGinnis | A practical playbook for launching a side venture without quitting the day job, devoting just 10% of your time and resources to entrepreneurship.
@@ -290,6 +290,10 @@ repos:
     description: "According to Plan | Graeme Goldsworthy | A beginner's guide to whole-Bible biblical theology, tracing how the gospel of Christ unifies God's progressive revelation from Genesis to Revelation."
     url: https://github.com/nplus-father/according-to-plan
     topics: [hugobook, leaf-biblical-studies, nplus-kind-book, nplus-portal, sub-theology, tag-primer, top-faith]
+  - name: ace-the-data-science-interview
+    description: Ace the Data Science Interview | Kevin Huo & Nick Singh | Pairs job-hunt advice on resumes, portfolio projects, cold email and behavioral rounds with 201 real interview questions on probability, statistics, ML, SQL, coding, product sense and case studies.
+    url: https://github.com/nplus-father/ace-the-data-science-interview
+    topics: [hugobook, leaf-job-search, nplus-kind-book, nplus-portal, sub-career, top-professional]
   - name: achievement-habit
     description: "The Achievement Habit | Bernard Roth | The Stanford d.school co-founder's 10 design-thinking-rooted habits — from 'reasons are bullshit' to 'doing is everything' — that turn intentions into results."
     url: https://github.com/nplus-father/achievement-habit
@@ -350,6 +354,10 @@ repos:
     description: Aging | Henri J. M. Nouwen & Walter J. Gaffney | A meditation on the meaning of growing old and the way of caring for the aging, transforming decline into a spiritual journey toward the light.
     url: https://github.com/nplus-father/aging
     topics: [hugobook, leaf-life-philosophy, nplus-kind-book, nplus-portal, sub-philosophy, tag-primer, top-wisdom]
+  - name: ai-engineering
+    description: AI Engineering | Chip Huyen | A practical guide to building applications on foundation models—evaluation, prompt engineering, RAG and agents, finetuning, dataset engineering, inference optimization and feedback-driven architecture.
+    url: https://github.com/nplus-father/ai-engineering
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: alchemy-of-finance
     description: "The Alchemy of Finance | George Soros | Sets out the theory of reflexivity — that participants' biased views change the fundamentals they are judging — and tests it in a real-time trading experiment."
     url: https://github.com/nplus-father/alchemy-of-finance
@@ -370,6 +378,10 @@ repos:
     description: Algorithms to Live By | Brian Christian & Tom Griffiths | Maps classic computer-science algorithms onto everyday decisions, drawing on mathematical proofs to give humans a practical framework for uncertainty and limited resources.
     url: https://github.com/nplus-father/algorithms-to-live-by
     topics: [hugobook, leaf-coding-practice, nplus-kind-book, nplus-portal, sub-engineering, tag-classic, tag-primer, top-craft]
+  - name: alignment-problem
+    description: The Alignment Problem | Brian Christian | Traces how machine-learning systems drift from what we intend—through bias, opacity, reward hacking and imitation—and the researchers working to align AI with human values.
+    url: https://github.com/nplus-father/alignment-problem
+    topics: [hugobook, leaf-ethics, nplus-kind-book, nplus-portal, sub-philosophy, top-wisdom]
   - name: all-about-asset-allocation
     description: All About Asset Allocation | Richard A. Ferri | A complete guide to building diversified portfolios across equities, bonds, real estate, and alternatives — with concrete life-cycle implementations.
     url: https://github.com/nplus-father/all-about-asset-allocation
@@ -566,6 +578,10 @@ repos:
     description: The Art of Spending Money | Morgan Housel | A behavioral follow-up to The Psychology of Money that argues spending well is more art than science, and that identity, envy, social debt, and contentment shape a richer life more than spreadsheets.
     url: https://github.com/nplus-father/art-of-spending-money
     topics: [hugobook, leaf-personal-finance, nplus-kind-book, nplus-portal, sub-finance, top-professional]
+  - name: art-of-statistics
+    description: "The Art of Statistics | David Spiegelhalter | Uses real-world questions—from Titanic survival to cancer screening—to teach the principles of learning from data: summarizing, modelling, uncertainty, probability, hypothesis testing and Bayesian reasoning."
+    url: https://github.com/nplus-father/art-of-statistics
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: art-of-strategy
     description: The Art of Strategy | Avinash Dixit & Barry J. Nalebuff | Uses game theory to dissect strategic interaction and decision-making across business, politics, and everyday life.
     url: https://github.com/nplus-father/art-of-strategy
@@ -702,6 +718,10 @@ repos:
     description: The Battle for Investment Survival | Gerald M. Loeb | A 1935 investing classic on the speculative attitude required to preserve capital and earn capital appreciation in real markets.
     url: https://github.com/nplus-father/battle-for-investment-survival
     topics: [hugobook, leaf-investing, nplus-kind-book, nplus-portal, sub-finance, top-professional]
+  - name: bayesian-statistics-fun-way
+    description: "Bayesian Statistics the Fun Way | Will Kurt | Introduces probability and Bayesian reasoning through Star Wars, LEGO and rubber ducks, building from Bayes' theorem to parameter estimation, Bayesian A/B tests and Bayes factors."
+    url: https://github.com/nplus-father/bayesian-statistics-fun-way
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: bcg-problem-solving-power
     description: BCG問題解決力 | 徐瑞廷、黃菁媺 | 以 BCG 顧問方法論為基礎，系統化傳授策略思考與問題解決的實戰技能。
     url: https://github.com/nplus-father/bcg-problem-solving-power
@@ -758,6 +778,10 @@ repos:
     description: Become an Effective Software Engineering Manager | James Stanier | A practical, end-to-end handbook for software engineering managers covering everything from day one on the job to long-term career planning.
     url: https://github.com/nplus-father/become-an-effective-software-engineering-manager
     topics: [hugobook, leaf-engineering-management, nplus-kind-book, nplus-portal, sub-engineering, tag-brick, tag-toolbox, top-craft]
+  - name: becoming-a-data-head
+    description: Becoming a Data Head | Alex J. Gutman & Jordan Goldmeier | Teaches business professionals to think statistically, question data and results, and understand the data scientist toolbox — clustering, regression, classification, text analytics and deep learning — without the math.
+    url: https://github.com/nplus-father/becoming-a-data-head
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: becoming-a-person-of-influence
     description: "Becoming a Person of Influence | John C. Maxwell & Jim Dornan | Lays out ten behaviors, from integrity and listening to empowering and reproducing others, by which a leader's influence grows and multiplies."
     url: https://github.com/nplus-father/becoming-a-person-of-influence
@@ -794,6 +818,10 @@ repos:
     description: "Being You | Anil Seth | Recasts consciousness as controlled hallucination: the brain's predictive best guess about the world and the body, with selfhood itself a perception rooted in staying alive."
     url: https://github.com/nplus-father/being-you
     topics: [hugobook, leaf-cognitive, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
+  - name: bernoullis-fallacy
+    description: "Bernoulli's Fallacy: Statistical Illogic and the Crisis of Modern Science | Aubrey Clayton | Argues that frequentist statistics rests on a logical error about probability, traces its history from Bernoulli to Fisher, ties it to the replication crisis and makes the case for Bayesian inference."
+    url: https://github.com/nplus-father/bernoullis-fallacy
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: better-angels-of-our-nature
     description: The Better Angels of Our Nature | Steven Pinker | The Harvard psychologist marshals quantitative evidence to argue that the long-run decline of violence is one of the most important trends in human history, layering six trends, five inner demons, four better angels, and five historical forces.
     url: https://github.com/nplus-father/better-angels-of-our-nature
@@ -918,6 +946,10 @@ repos:
     description: "Dietrich Bonhoeffer—Spiritual Care in a Religionless Age | Volker Schoßwald | Twelve lectures grounded in Bonhoeffer's thought on spiritual care, exploring pastoral practice for a post-religious age."
     url: https://github.com/nplus-father/bonhoeffer-spiritual-care-in-a-religionless-age
     topics: [hugobook, leaf-pastoral, nplus-kind-book, nplus-portal, sub-theology, tag-primer, top-faith]
+  - name: book-of-why
+    description: "The Book of Why | Judea Pearl & Dana Mackenzie | Tells how causal diagrams and the do-calculus freed science from 'correlation is not causation', climbing the ladder of association, intervention and counterfactuals toward machines that can reason about cause and effect."
+    url: https://github.com/nplus-father/book-of-why
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: book-you-wish-your-parents-had-read
     description: "The Book You Wish Your Parents Had Read | Philippa Perry | A psychotherapist's guide to repairing inherited family patterns by attending to feelings, ruptures, and repairs across the full arc of a parent-child relationship."
     url: https://github.com/nplus-father/book-you-wish-your-parents-had-read
@@ -1062,6 +1094,10 @@ repos:
     description: Call Sign Chaos | Jim Mattis & Bing West | The 26th U.S. Secretary of Defense traces forty years in the Marine Corps across three stages—direct, executive, and strategic leadership—from company commander to combatant commander, distilling lessons on leading and learning.
     url: https://github.com/nplus-father/call-sign-chaos
     topics: [hugobook, leaf-vision, nplus-kind-book, nplus-portal, sub-leadership, top-professional]
+  - name: calling-bullshit
+    description: Calling Bullshit | Carl T. Bergstrom & Jevin D. West | Teaches how to spot and refute data-driven nonsense—misleading numbers, selection bias, dodgy charts, big-data hype and fragile science—using plain reasoning rather than advanced math.
+    url: https://github.com/nplus-father/calling-bullshit
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: can-you-drink-the-cup
     description: "Can You Drink the Cup? | Henri J. M. Nouwen | A meditation built on one image—holding, lifting, and drinking the cup—turning Jesus's question to James and John into a practice for embracing sorrow and joy as one life."
     url: https://github.com/nplus-father/can-you-drink-the-cup
@@ -1106,6 +1142,10 @@ repos:
     description: Catalyst | Jonah Berger | Reframes persuasion around removing barriers rather than adding pressure, using five forces — Reactance, Endowment, Distance, Uncertainty, Corroborating Evidence — that spell REDUCE.
     url: https://github.com/nplus-father/catalyst
     topics: [hugobook, leaf-persuasion, nplus-kind-book, nplus-portal, sub-communication, tag-primer, top-professional]
+  - name: causal-inference-mixtape
+    description: "Causal Inference: The Mixtape | Scott Cunningham | An applied econometrics guide to identifying causal effects—DAGs, potential outcomes, matching, regression discontinuity, instrumental variables, panel data, difference-in-differences and synthetic control—with code."
+    url: https://github.com/nplus-father/causal-inference-mixtape
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: celebration-of-discipline
     description: "Celebration of Discipline | Richard J. Foster | Foster's 1978 classic of Christian spirituality gathers two thousand years of devotional tradition into twelve disciplines, charting a path of \"disciplined grace\" between the cliffs of moralism and antinomianism."
     url: https://github.com/nplus-father/celebration-of-discipline
@@ -1506,6 +1546,18 @@ repos:
     description: "The Dark Side of Valuation | Aswath Damodaran | Damodaran's guide to valuing the companies that break standard models — young, growth, declining, cyclical, financial, intangible-heavy, and emerging-market firms — by confronting uncertainty instead of hiding from it."
     url: https://github.com/nplus-father/dark-side-of-valuation
     topics: [hugobook, leaf-investing, nplus-kind-book, nplus-portal, sub-finance, top-professional]
+  - name: data-detective
+    description: The Data Detective | Tim Harford | Ten rules plus a golden rule for thinking clearly about statistics—checking your feelings, asking who is missing, demanding transparency from algorithms and staying curious instead of cynical about numbers.
+    url: https://github.com/nplus-father/data-detective
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
+  - name: data-science-for-business
+    description: Data Science for Business | Foster Provost & Tom Fawcett | Teaches managers and analysts the fundamental principles of data-analytic thinking, from supervised segmentation and overfitting to expected-value evaluation, so they can turn business problems into data mining tasks.
+    url: https://github.com/nplus-father/data-science-for-business
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
+  - name: data-science-from-scratch
+    description: Data Science from Scratch | Joel Grus | Builds the core tools of data science—statistics, probability, gradient descent, machine-learning models, neural networks, NLP and recommenders—from first principles in plain Python.
+    url: https://github.com/nplus-father/data-science-from-scratch
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: data-warehouse-toolkit
     description: "The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling | Ralph Kimball & Margy Ross | The second edition of the canonical dimensional modeling text, teaching star schemas, slowly changing dimensions, and the enterprise bus matrix through fifteen industry case studies."
     url: https://github.com/nplus-father/data-warehouse-toolkit
@@ -1594,6 +1646,10 @@ repos:
     description: Designing Event-Driven Systems | Ben Stopford | Reframes Kafka as the backbone of company-scale architecture, covering event collaboration, stateful stream processing, event sourcing and CQRS, schema evolution, and streaming services.
     url: https://github.com/nplus-father/designing-event-driven-systems
     topics: [hugobook, leaf-systems-design, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
+  - name: designing-machine-learning-systems
+    description: Designing Machine Learning Systems | Chip Huyen | A holistic framework for building production ML systems that are reliable, scalable and iterative, covering data engineering, features, deployment, distribution shift, continual learning and MLOps infrastructure.
+    url: https://github.com/nplus-father/designing-machine-learning-systems
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: designing-web-apis
     description: Designing Web APIs | Brenda Jin, Saurabh Sahni & Amir Shevat | A complete walkthrough of Web API design, from architectural paradigms to the developer ecosystem and best practices.
     url: https://github.com/nplus-father/designing-web-apis
@@ -1806,6 +1862,10 @@ repos:
     description: "Effective Bible Teaching | James C. Wilhoit & Leland Ryken | A practical guide to teaching Scripture that joins inductive method with sensitivity to genre, helping teachers bridge the text to today's listeners."
     url: https://github.com/nplus-father/effective-bible-teaching
     topics: [hugobook, leaf-discipleship, nplus-kind-book, nplus-portal, sub-spiritual-formation, top-faith]
+  - name: effective-data-storytelling
+    description: Effective Data Storytelling | Brent Dykes | Shows how to turn analytical insights into action by combining data, narrative and visuals into a data story, with principles for structuring the narrative and designing clear charts.
+    url: https://github.com/nplus-father/effective-data-storytelling
+    topics: [hugobook, leaf-storytelling, nplus-kind-book, nplus-portal, sub-communication, top-professional]
   - name: effective-debugging
     description: Effective Debugging | Diomidis Spinellis | Sixty-six concrete debugging techniques, systematically covering a complete methodology that runs from strategy down to tools.
     url: https://github.com/nplus-father/effective-debugging
@@ -1830,6 +1890,10 @@ repos:
     description: The Elements of Investing | Burton G. Malkiel & Charles D. Ellis | Two investing veterans distill a lifetime of saving and investing principles into the leanest possible primer.
     url: https://github.com/nplus-father/elements-of-investing
     topics: [hugobook, leaf-personal-finance, nplus-kind-book, nplus-portal, sub-finance, tag-primer, top-professional]
+  - name: elements-of-statistical-learning
+    description: The Elements of Statistical Learning | Trevor Hastie, Robert Tibshirani et al. | The graduate reference on statistical learning, deriving linear methods, regularization, kernels, trees, boosting, neural networks, SVMs, random forests, graphical models and high-dimensional inference within one framework.
+    url: https://github.com/nplus-father/elements-of-statistical-learning
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: elements-of-style
     description: The Elements of Style | William Strunk Jr. & E. B. White | The most enduring style guide in English, laying down concise, vigorous rules that form the bedrock of clear writing.
     url: https://github.com/nplus-father/elements-of-style
@@ -1962,6 +2026,10 @@ repos:
     description: Every Good Endeavor | Timothy Keller & Katherine Leary Alsdorf | Builds a fully integrated Christian theology of work and the practice of faith in the workplace, grounded in biblical theology.
     url: https://github.com/nplus-father/every-good-endeavor
     topics: [hugobook, leaf-biblical-studies, nplus-kind-book, nplus-portal, sub-theology, top-faith]
+  - name: everybody-lies
+    description: Everybody Lies | Seth Stephens-Davidowitz | Uses Google searches and other new big-data sources as a digital truth serum to reveal what people really think about sex, race, health and money, and explains what such data can and cannot do.
+    url: https://github.com/nplus-father/everybody-lies
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: everyone-can-succeed
     description: 每個人都可以成功：程天縱的31個見解 | 程天縱 | 程天縱以31個見解談價值觀、命運與職涯，從個人成長到社會議題，引導讀者建立自己的人生思路。
     url: https://github.com/nplus-father/everyone-can-succeed
@@ -2314,6 +2382,10 @@ repos:
     description: Fundamentals of Data Engineering | Joe Reis & Matt Housley | Frames the discipline around a lifecycle — generation, storage, ingestion, transformation, serving — plus the undercurrents (security, data management, orchestration) that run beneath every stage.
     url: https://github.com/nplus-father/fundamentals-of-data-engineering
     topics: [hugobook, leaf-databases, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
+  - name: fundamentals-of-data-visualization
+    description: Fundamentals of Data Visualization | Claus O. Wilke | A tool-agnostic guide to making informative and compelling figures, from mapping data to aesthetics and choosing chart types to principles such as proportional ink, color use and avoiding 3D.
+    url: https://github.com/nplus-father/fundamentals-of-data-visualization
+    topics: [hugobook, leaf-visual, nplus-kind-book, nplus-portal, sub-design, top-craft]
   - name: fundamentals-of-software-architecture
     description: Fundamentals of Software Architecture | Mark Richards & Neal Ford | An engineering-oriented guide to software architecture, covering foundational theory, architectural styles, and the soft skills the role requires.
     url: https://github.com/nplus-father/fundamentals-of-software-architecture
@@ -2634,6 +2706,10 @@ repos:
     description: "Hacking Growth | Sean Ellis & Morgan Brown | The man who coined \"growth hacking\" and his co-author lay out how cross-functional teams use rapid experimentation cycles to drive breakout growth across acquisition, activation, retention, and revenue."
     url: https://github.com/nplus-father/hacking-growth
     topics: [hugobook, leaf-marketing, nplus-kind-book, nplus-portal, sub-business, tag-classic, tag-toolbox, top-professional]
+  - name: hands-on-machine-learning-with-scikit-learn-and-pytorch
+    description: Hands-On Machine Learning with Scikit-Learn and PyTorch | Aurélien Géron | A code-first tour of machine learning, from classic Scikit-Learn models through PyTorch neural networks, CNNs, RNNs, transformers, diffusion models and reinforcement learning.
+    url: https://github.com/nplus-father/hands-on-machine-learning-with-scikit-learn-and-pytorch
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: happier
     description: "Happier | Tal Ben-Shahar | Defines happiness as the simultaneous experience of pleasure and meaning, using frameworks like the \"ultimate currency,\" the four-burger model, and calling to translate positive-psychology research into daily practice."
     url: https://github.com/nplus-father/happier
@@ -3062,6 +3138,10 @@ repos:
     description: How to Know a Person | David Brooks | Brooks blends psychology, philosophy, and personal experience into a systematic guide for truly seeing other people—a complete practice from attention through conversation to accompaniment.
     url: https://github.com/nplus-father/how-to-know-a-person
     topics: [hugobook, leaf-community, nplus-kind-book, nplus-portal, sub-relationships, tag-classic, top-personal]
+  - name: how-to-lie-with-statistics
+    description: How to Lie with Statistics | Darrell Huff | The classic primer on how biased samples, cherry-picked averages, missing figures, distorted graphs and false causation mislead, ending with five questions for talking back to a statistic.
+    url: https://github.com/nplus-father/how-to-lie-with-statistics
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: how-to-live
     description: "How to Live | Sarah Bakewell | Twenty answers to a single question — how to live? — drawn from Montaigne's life and Essais, blending biography, intellectual history, and philosophy into a vivid portrait of self-examination."
     url: https://github.com/nplus-father/how-to-live
@@ -3074,6 +3154,14 @@ repos:
     description: "How to Make Money in Stocks | William J. O'Neil | Distills the pre-breakout traits of more than 100 U.S. super-stocks across 125 years into the seven-letter CAN SLIM rule, paired with strict stop-loss discipline and volume-pattern analysis—a growth-stock system fusing fundamentals and technicals."
     url: https://github.com/nplus-father/how-to-make-money-in-stocks
     topics: [hugobook, leaf-value-investing, nplus-kind-book, nplus-portal, sub-finance, tag-brick, tag-classic, top-professional]
+  - name: how-to-measure-anything
+    description: How to Measure Anything | Douglas W. Hubbard | Argues that anything that matters can be measured as a reduction in uncertainty, and shows how calibrated estimates, Monte Carlo risk models, value of information and small samples make supposed intangibles quantifiable.
+    url: https://github.com/nplus-father/how-to-measure-anything
+    topics: [hugobook, leaf-decision-making, nplus-kind-book, nplus-portal, sub-leadership, top-professional]
+  - name: how-to-measure-anything-in-cybersecurity-risk
+    description: How to Measure Anything in Cybersecurity Risk | Douglas W. Hubbard & Richard Seiersen | Replaces risk matrices with quantitative methods—decomposition, calibrated estimates, Monte Carlo simulation and Bayesian updating—to measure and manage cybersecurity risk.
+    url: https://github.com/nplus-father/how-to-measure-anything-in-cybersecurity-risk
+    topics: [hugobook, leaf-security, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: how-to-read-a-book
     description: How to Read a Book | Mortimer J. Adler & Charles Van Doren | The classic guide to elementary, inspectional, analytical, and syntopical reading — the four levels of skill needed to truly absorb a book.
     url: https://github.com/nplus-father/how-to-read-a-book
@@ -3158,6 +3246,10 @@ repos:
     description: "Humble Inquiry | Edgar H. Schein | The MIT Sloan emeritus argues that telling-driven cultures fail in complex work, and offers \"humble inquiry\"—the gentle art of drawing someone out by asking, not telling—as the foundation for trust, relationships, and effective organizations."
     url: https://github.com/nplus-father/humble-inquiry
     topics: [hugobook, leaf-persuasion, nplus-kind-book, nplus-portal, sub-communication, tag-classic, tag-primer, top-professional]
+  - name: hundred-page-machine-learning-book
+    description: The Hundred-Page Machine Learning Book | Andriy Burkov | A compact tour of the machine learning that has proven useful in practice, from notation and fundamental algorithms through feature engineering, neural networks, unsupervised learning and learning to rank.
+    url: https://github.com/nplus-father/hundred-page-machine-learning-book
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: hustle-and-gig
     description: "Hustle and Gig | Alexandrea J. Ravenelle | A sociologist's interviews with Uber, Airbnb, TaskRabbit, and Kitchensurfing workers exposing how the sharing economy strips traditional labor protections."
     url: https://github.com/nplus-father/hustle-and-gig
@@ -3366,6 +3458,14 @@ repos:
     description: 新約聖經研究導論 | 孫寶玲 | 涵蓋新約背景、經書研讀方法與各卷書導論的研究入門
     url: https://github.com/nplus-father/introduction-to-nt-research
     topics: [hugobook, leaf-systematic, nplus-kind-book, nplus-portal, sub-theology, tag-brick, tag-toolbox, top-faith]
+  - name: introduction-to-probability
+    description: "Introduction to Probability | Joseph K. Blitzstein & Jessica Hwang | Harvard's Stat 110 textbook builds probability from counting and conditioning through distributions, expectation, limit theorems, Markov chains and MCMC, stressing story-based intuition."
+    url: https://github.com/nplus-father/introduction-to-probability
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
+  - name: introduction-to-statistical-learning-python
+    description: "An Introduction to Statistical Learning: with Applications in Python | Gareth James, Daniela Witten et al. | The ISL classic in Python, covering regression, classification, resampling, regularization, trees, SVMs, deep learning, survival analysis, unsupervised learning and multiple testing with hands-on labs."
+    url: https://github.com/nplus-father/introduction-to-statistical-learning-python
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: intuition-pumps
     description: Intuition Pumps | Daniel C. Dennett | A toolkit of 77 thought experiments and reasoning devices Dennett uses to think clearly about meaning, evolution, consciousness, and free will.
     url: https://github.com/nplus-father/intuition-pumps
@@ -3390,6 +3490,10 @@ repos:
     description: "Investment Valuation | Aswath Damodaran | The reference text on valuation: risk and cost of capital, cash flows and growth, intrinsic and relative models, then the hard cases — financial firms, money-losers, start-ups, private firms, real estate and real options."
     url: https://github.com/nplus-father/investment-valuation
     topics: [hugobook, leaf-investing, nplus-kind-book, nplus-portal, sub-finance, top-professional]
+  - name: invisible-women
+    description: Invisible Women | Caroline Criado Perez | Documents the gender data gap—how a world designed around male defaults overlooks women in transport, work, product design, medicine, public life and disaster response.
+    url: https://github.com/nplus-father/invisible-women
+    topics: [hugobook, leaf-ethics, nplus-kind-book, nplus-portal, sub-philosophy, top-wisdom]
   - name: irrational-ape
     description: The Irrational Ape | David Robert Grimes | A physicist-turned-cancer-researcher tour of why we fall for disinformation, conspiracy theories, and propaganda — and the cognitive defenses that work.
     url: https://github.com/nplus-father/irrational-ape
@@ -3654,6 +3758,10 @@ repos:
     description: Leading with Questions | Michael J. Marquardt & Bob Tiede | Argues that the best leaders lead with questions rather than answers, and shows how to build a questioning culture that empowers people, sharpens problem-solving, and drives change.
     url: https://github.com/nplus-father/leading-with-questions
     topics: [hugobook, leaf-culture, nplus-kind-book, nplus-portal, sub-leadership, top-professional]
+  - name: lean-analytics
+    description: Lean Analytics | Alistair Croll & Benjamin Yoskovitz | Shows startups how to pick the One Metric That Matters for their business model and stage, with benchmarks for e-commerce, SaaS, mobile apps, media, UGC and marketplaces.
+    url: https://github.com/nplus-father/lean-analytics
+    topics: [hugobook, leaf-startup, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: lean-startup
     description: The Lean Startup | Eric Ries | Treats a startup as an organization running experiments under extreme uncertainty, centering the Build-Measure-Learn loop and validated learning as a management method designed for innovation.
     url: https://github.com/nplus-father/lean-startup
@@ -4062,6 +4170,10 @@ repos:
     description: Mastering Behavioral Interviews | Austen McDonald | A storytelling-driven system (CARL over STAR) for decoding, selecting, and delivering career stories that win behavioral interviews at Big Tech and beyond.
     url: https://github.com/nplus-father/mastering-behavioral-interviews
     topics: [hugobook, leaf-job-search, nplus-kind-book, nplus-portal, sub-career, top-professional]
+  - name: mastering-metrics
+    description: "Mastering 'Metrics: The Path from Cause to Effect | Joshua D. Angrist & Jörn-Steffen Pischke | An accessible guide to the five core tools of causal econometrics — randomized trials, regression, instrumental variables, regression discontinuity and differences-in-differences — told through real policy studies."
+    url: https://github.com/nplus-father/mastering-metrics
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: mastering-the-market-cycle
     description: Mastering the Market Cycle | Howard Marks | The Oaktree founder draws on 48 years of investing experience to show how to read where the economy, credit, and market psychology sit in the cycle—and how to lean a portfolio aggressive or defensive at the extremes for asymmetric long-run odds.
     url: https://github.com/nplus-father/mastering-the-market-cycle
@@ -4442,6 +4554,10 @@ repos:
     description: Mobile System Design Interview | Alex Xu | A system-design interview prep guide tailored for mobile engineers, with a five-step framework, seven case studies, and mobile-specific building blocks.
     url: https://github.com/nplus-father/mobile-system-design-interview
     topics: [hugobook, leaf-coding-practice, nplus-kind-book, nplus-portal, sub-engineering, tag-toolbox, top-craft]
+  - name: model-thinker
+    description: The Model Thinker | Scott E. Page | Presents the many-model paradigm, surveying some thirty core models — distributions, networks, Markov chains, game theory, learning and more — and showing how combining them yields wiser predictions, explanations and decisions.
+    url: https://github.com/nplus-father/model-thinker
+    topics: [hugobook, leaf-critical-thinking, nplus-kind-book, nplus-portal, sub-mindset, top-personal]
   - name: modern-man-in-search-of-soul
     description: "Modern Man in Search of a Soul | C. G. Jung | A selection of eleven lectures introducing Jung's mature analytical psychology—dream analysis, psychological types, the stages of life, his break with Freud, and the spiritual crisis of modernity."
     url: https://github.com/nplus-father/modern-man-in-search-of-soul
@@ -4514,6 +4630,10 @@ repos:
     description: Naked Economics | Charles Wheelan | A jargon-free tour of how markets, incentives, information, the Fed and global trade actually work, arguing that economics is about people rather than equations.
     url: https://github.com/nplus-father/naked-economics
     topics: [hugobook, leaf-economics, nplus-kind-book, nplus-portal, sub-finance, top-professional]
+  - name: naked-statistics
+    description: Naked Statistics | Charles Wheelan | Strips the math away to explain the intuition behind descriptive statistics, probability, the central limit theorem, inference, polling and regression—and the common ways each gets misused.
+    url: https://github.com/nplus-father/naked-statistics
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: narrative-and-numbers
     description: Narrative and Numbers | Aswath Damodaran | The valuation guru argues that good business analysis requires fusing rigorous numbers with disciplined storytelling, with case-based methods to test, modify, and value any narrative.
     url: https://github.com/nplus-father/narrative-and-numbers
@@ -5162,6 +5282,10 @@ repos:
     description: Practical Monitoring | Mike Julian | Opens with the anti-patterns — tool obsession, monitoring-as-a-job, checkbox monitoring — then works outward from business metrics to frontend, application, server, network, and security monitoring.
     url: https://github.com/nplus-father/practical-monitoring
     topics: [hugobook, leaf-devops, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
+  - name: practical-statistics-for-data-scientists
+    description: Practical Statistics for Data Scientists | Peter Bruce, Andrew Bruce et al. | Explains 50+ statistical concepts that matter for data science—EDA, sampling, experiments, regression, classification, machine learning and generative AI—using R and Python.
+    url: https://github.com/nplus-father/practical-statistics-for-data-scientists
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: practice-of-cloud-system-administration
     description: The Practice of Cloud System Administration | Thomas A. Limoncelli & Strata R. Chalup et al. | A design-and-operations manual for large distributed web services, pairing scaling and resiliency patterns with the DevOps and SRE practices that keep them running.
     url: https://github.com/nplus-father/practice-of-cloud-system-administration
@@ -5202,6 +5326,10 @@ repos:
     description: Predictably Irrational | Dan Ariely | Thirteen experiments showing that our departures from rationality are systematic and repeatable — relativity, anchoring, the pull of FREE, social versus market norms, ownership, expectations and everyday dishonesty.
     url: https://github.com/nplus-father/predictably-irrational
     topics: [hugobook, leaf-economics, nplus-kind-book, nplus-portal, sub-finance, top-professional]
+  - name: prediction-machines
+    description: Prediction Machines | Ajay Agrawal, Joshua Gans et al. | Recasts AI as a drop in the cost of prediction and shows what that means for decisions, judgment, workflows, jobs and business strategy.
+    url: https://github.com/nplus-father/prediction-machines
+    topics: [hugobook, leaf-strategy, nplus-kind-book, nplus-portal, sub-business, top-professional]
   - name: prefactoring
     description: Prefactoring | Ken Pugh | A guidebook on applying lessons from refactoring up front through extreme abstraction, separation, and readability so code is built right the first time rather than patched later.
     url: https://github.com/nplus-father/prefactoring
@@ -5310,6 +5438,10 @@ repos:
     description: "The Pursuit of Holiness | Jerry Bridges | Built around \"God and Christian working together,\" Bridges revisits sanctification across five lenses—concept, practice, human nature, environment, joy—correcting evangelical imbalances that emphasize grace without obedience."
     url: https://github.com/nplus-father/pursuit-of-holiness
     topics: [hugobook, leaf-practical-theology, nplus-kind-book, nplus-portal, sub-theology, tag-classic, tag-primer, top-faith]
+  - name: python-for-data-analysis
+    description: "Python for Data Analysis | Wes McKinney | The pandas creator's practical guide to manipulating, cleaning, reshaping and analyzing data in Python with NumPy, pandas, matplotlib and IPython/Jupyter."
+    url: https://github.com/nplus-father/python-for-data-analysis
+    topics: [hugobook, leaf-ai-ml, nplus-kind-book, nplus-portal, sub-engineering, top-craft]
   - name: qbq-question-behind-question
     description: QBQ! The Question Behind the Question | John G. Miller | A method for eliminating blame and complaint by reframing the questions you ask yourself, building personal accountability and a bias to action.
     url: https://github.com/nplus-father/qbq-question-behind-question
@@ -6230,6 +6362,14 @@ repos:
     description: "Statistical Consequences of Fat Tails | Nassim Nicholas Taleb | The technical volume of the Incerto, collecting Taleb's papers on what breaks when tails are fat — the law of large numbers, inequality estimators, forecasting metrics, and option pricing under power laws."
     url: https://github.com/nplus-father/statistical-consequences-of-fat-tails
     topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
+  - name: statistical-rethinking
+    description: Statistical Rethinking | Richard McElreath | A Bayesian course that rebuilds applied statistics around causal DAGs, posterior simulation, information criteria, MCMC, generalized linear and multilevel models, with code in R and Stan.
+    url: https://github.com/nplus-father/statistical-rethinking
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
+  - name: statistics-done-wrong
+    description: Statistics Done Wrong | Alex Reinhart | A concise tour of the statistical errors that plague published science—misread p values, underpowered studies, pseudoreplication, double-dipping and model abuse—and how to avoid them.
+    url: https://github.com/nplus-father/statistics-done-wrong
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: status-anxiety
     description: Status Anxiety | Alain de Botton | Diagnoses the modern roots of status anxiety and seeks remedies across philosophy, art, politics, religion, and the bohemian tradition.
     url: https://github.com/nplus-father/status-anxiety
@@ -6602,6 +6742,10 @@ repos:
     description: Think | Simon Blackburn | An accessible introduction to the central questions of philosophy — knowledge, mind, free will, the self, God, reasoning, the world, and what to do.
     url: https://github.com/nplus-father/think-blackburn
     topics: [hugobook, leaf-ethics, nplus-kind-book, nplus-portal, sub-philosophy, tag-primer, top-wisdom]
+  - name: think-stats
+    description: Think Stats | Allen B. Downey | Teaches exploratory data analysis and statistics with Python on real datasets, from distributions and estimation to hypothesis testing, regression, time series and survival analysis.
+    url: https://github.com/nplus-father/think-stats
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: think-twice-harnessing-the-power-of-counterintuition
     description: 再想一下-好決策的關鍵思考術 | Michael J. Mauboussin | 揭露常見決策陷阱，以外在觀點與反直覺思考提升決策品質
     url: https://github.com/nplus-father/think-twice-harnessing-the-power-of-counterintuition
@@ -6762,6 +6906,10 @@ repos:
     description: The Trust Edge | David Horsager | A leadership framework arguing trust is the most undervalued asset, with eight pillars — clarity, compassion, character, competency, commitment, connection, contribution, and consistency — for building it.
     url: https://github.com/nplus-father/trust-edge
     topics: [hugobook, leaf-vision, nplus-kind-book, nplus-portal, sub-leadership, top-professional]
+  - name: trustworthy-online-controlled-experiments
+    description: Trustworthy Online Controlled Experiments | Ron Kohavi, Diane Tang & Ya Xu | Practitioners from Microsoft, Google and LinkedIn explain how to design, run and analyze trustworthy A/B tests at scale, from metrics and platform culture to variance, triggering and sample ratio mismatch.
+    url: https://github.com/nplus-father/trustworthy-online-controlled-experiments
+    topics: [hugobook, leaf-statistics, nplus-kind-book, nplus-portal, sub-science, top-wisdom]
   - name: truth-beauty-and-goodness-reframed
     description: Truth, Beauty, and Goodness Reframed | Howard Gardner | Defends the three classical virtues against postmodern and digital erosion, recasting each for an age of truthiness and social media and showing how to teach them across a lifetime.
     url: https://github.com/nplus-father/truth-beauty-and-goodness-reframed
@@ -6918,6 +7066,10 @@ repos:
     description: "Vietnam: Rising Dragon | Bill Hayton | A portrait of contemporary Vietnam, where a nominally communist party presides over raw capitalism, land grabs, censorship, dissent and a delicate balance between China and the United States."
     url: https://github.com/nplus-father/vietnam-rising-dragon
     topics: [hugobook, leaf-modern, nplus-kind-book, nplus-portal, sub-history, top-wisdom]
+  - name: visual-display-of-quantitative-information
+    description: The Visual Display of Quantitative Information | Edward R. Tufte | The landmark treatise on statistical graphics, contrasting graphical excellence with distortion and setting out data-ink, chartjunk, data density and small multiples as principles of design.
+    url: https://github.com/nplus-father/visual-display-of-quantitative-information
+    topics: [hugobook, leaf-visual, nplus-kind-book, nplus-portal, sub-design, top-craft]
   - name: wait-what-book
     description: "Wait, What? | James E. Ryan | Drawn from his Harvard Graduate School of Education commencement speech, the book argues that life isn't about chasing perfect answers but about asking the right questions—five everyday yet deep \"essential questions,\" plus a bonus, as five keys to understanding self, others, and the world."
     url: https://github.com/nplus-father/wait-what-book
@@ -7030,6 +7182,10 @@ repos:
     description: The Wealthy Barber Returns | David Barr Chilton | Short, funny essays on why saving is hard — status, wiring, credit, and self-deception — from the author who sold two million copies of The Wealthy Barber.
     url: https://github.com/nplus-father/wealthy-barber-returns
     topics: [hugobook, leaf-personal-finance, nplus-kind-book, nplus-portal, sub-finance, top-professional]
+  - name: weapons-of-math-destruction
+    description: "Weapons of Math Destruction | Cathy O'Neil | A former quant shows how opaque, unaccountable and scalable algorithms in college rankings, hiring, policing, credit and insurance punish the poor and reinforce inequality."
+    url: https://github.com/nplus-father/weapons-of-math-destruction
+    topics: [hugobook, leaf-ethics, nplus-kind-book, nplus-portal, sub-philosophy, top-wisdom]
   - name: web-application-hackers-handbook
     description: "The Web Application Hacker's Handbook | Dafydd Stuttard & Marcus Pinto | A systematic attacker's tour of web applications — mapping, authentication, sessions, access control, injection, logic and the server itself — ending in a repeatable testing methodology."
     url: https://github.com/nplus-father/web-application-hackers-handbook
